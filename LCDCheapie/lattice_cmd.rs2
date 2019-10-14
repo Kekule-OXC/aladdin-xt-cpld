@@ -1,0 +1,1 @@
+-nodal -src lcdcheapie.bl5 -type BLIF -presrc lcdcheapie.bl3 -crf lcdcheapie.crf -sif lcdcheapie.sif -devfile "D:/ispLEVER_Classic2_0/ispcpld/dat/lc4k/m4s_32_30.dev" -lci lcdcheapie.lct

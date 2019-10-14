@@ -1,0 +1,108 @@
+#PLAFILE     lcdcheapie.bl5
+#DATE        Sun Aug 18 23:17:06 2019
+
+#DESIGN      lcdcheapie
+#DEVICE      MACH4S-32
+
+
+// Default settings.
+DATA GLOBAL tINDIO:0
+
+
+// Signal locations
+DATA LOCATION pin_xbox_n_lrst:A_*_2
+DATA LOCATION pin_xbox_lclk:*_*_39
+DATA LOCATION pinout4_xbox_lad_3_:B_3_21
+DATA LOCATION pinout4_xbox_lad_2_:B_4_22
+DATA LOCATION pinout4_xbox_lad_1_:B_0_37
+DATA LOCATION pinout4_xbox_lad_0_:B_1_38
+DATA LOCATION p4out_lcd_d4_d7_3_:A_1_41
+DATA LOCATION pout_lcd_rs:A_0_9
+DATA LOCATION pout_lcd_e:B_9_29
+DATA LOCATION pout_backlight:B_7_26
+DATA LOCATION p4out_lcd_d4_d7_2_:A_2_42
+DATA LOCATION p4out_lcd_d4_d7_1_:A_3_43
+DATA LOCATION p4out_lcd_d4_d7_0_:A_4_44
+DATA LOCATION s_fsm_counter_1_:A_10
+DATA LOCATION s_fsm_counter_2_:A_7
+DATA LOCATION s5_duty_cycle_0_:B_2
+DATA LOCATION s5_duty_cycle_1_:B_5
+DATA LOCATION s5_duty_cycle_2_:A_6
+DATA LOCATION s5_duty_cycle_3_:B_6
+DATA LOCATION s5_duty_cycle_4_:B_8
+DATA LOCATION s4_io_reg_addr_0_:A_11
+DATA LOCATION s4_io_reg_addr_1_:B_10
+DATA LOCATION s4_io_reg_addr_2_:A_12
+DATA LOCATION s4_io_reg_addr_3_:A_13
+DATA LOCATION s_fsm_counter_0_:A_14
+DATA LOCATION inst_s_io_cyc:A_5
+DATA LOCATION s5_pwm_counter_0_:B_15
+DATA LOCATION s5_pwm_counter_1_:B_14
+DATA LOCATION s5_pwm_counter_2_:B_12
+DATA LOCATION s5_pwm_counter_3_:B_11
+DATA LOCATION s5_pwm_counter_4_:B_13
+DATA LOCATION s_lpc_fsm_state_0_:A_8
+DATA LOCATION s_lpc_fsm_state_1_:A_9
+DATA LOCATION N_37_i:A_15
+
+// Signals direction
+DATA IO_DIR pin_xbox_n_lrst:IN
+DATA IO_DIR pin_xbox_lclk:IN
+DATA IO_DIR pinout4_xbox_lad_3_:BI
+DATA IO_DIR pinout4_xbox_lad_2_:BI
+DATA IO_DIR pinout4_xbox_lad_1_:BI
+DATA IO_DIR pinout4_xbox_lad_0_:BI
+DATA IO_DIR p4out_lcd_d4_d7_3_:OUT
+DATA IO_DIR pout_lcd_rs:OUT
+DATA IO_DIR pout_lcd_e:OUT
+DATA IO_DIR pout_backlight:OUT
+DATA IO_DIR p4out_lcd_d4_d7_2_:OUT
+DATA IO_DIR p4out_lcd_d4_d7_1_:OUT
+DATA IO_DIR p4out_lcd_d4_d7_0_:OUT
+
+// Global Clocks
+DATA GLB_CLOCK pin_xbox_lclk:0
+
+// Signals using Shared Clock or CE
+DATA tBCLK s_fsm_counter_1_.CE
+DATA tBCLK s_fsm_counter_2_.CE
+DATA tBCLK s5_duty_cycle_0_.CE
+DATA tBCLK s5_duty_cycle_1_.CE
+DATA tBCLK s5_duty_cycle_3_.CE
+DATA tBCLK s5_duty_cycle_4_.CE
+DATA tBCLK s_fsm_counter_0_.CE
+DATA tBCLK inst_s_io_cyc.CE
+
+// Signals using global PT OEs
+DATA tGPTOE pinout4_xbox_lad_3_
+DATA tGPTOE pinout4_xbox_lad_2_
+DATA tGPTOE pinout4_xbox_lad_1_
+DATA tGPTOE pinout4_xbox_lad_0_
+
+// Block Load Adders
+DATA tBLA N_37_i:1
+DATA tBLA s_lpc_fsm_state_1_:1
+DATA tBLA s_lpc_fsm_state_0_:1
+DATA tBLA inst_s_io_cyc:1
+DATA tBLA s_fsm_counter_0_:1
+DATA tBLA s4_io_reg_addr_0_:1
+DATA tBLA s5_duty_cycle_2_:1
+DATA tBLA s_fsm_counter_2_:1
+DATA tBLA s_fsm_counter_1_:1
+DATA tBLA pinout4_xbox_lad_3_:1
+DATA tBLA pin_xbox_n_lrst:1
+DATA tBLA pinout4_xbox_lad_2_:1
+DATA tBLA pinout4_xbox_lad_1_:1
+
+// Signals using OSM or fast 5-PTs path
+DATA tOSM pinout4_xbox_lad_3_
+DATA tOSM pinout4_xbox_lad_2_
+DATA tOSM pinout4_xbox_lad_1_
+DATA tOSM pinout4_xbox_lad_0_
+DATA tOSM p4out_lcd_d4_d7_3_
+DATA tOSM pout_lcd_rs
+DATA tOSM pout_lcd_e
+DATA tOSM pout_backlight
+DATA tOSM p4out_lcd_d4_d7_2_
+DATA tOSM p4out_lcd_d4_d7_1_
+DATA tOSM p4out_lcd_d4_d7_0_

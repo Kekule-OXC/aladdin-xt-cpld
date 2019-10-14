@@ -1,0 +1,1092 @@
+// Node Statistic Information File
+// Tool:  ispLEVER Classic 2.0.00.17.20.15
+// Design 'lcdcheapie_entity' created   Tue Aug 13 21:26:23 2019
+
+// Fmax Logic Level: 2.
+
+// Path: s4_io_reg_addr_0_.Q
+//    -> un30_s_fsm_counter
+//    -> s5_duty_cycle_4_.D
+
+// Signal Name: pinout4_xbox_lad_3_
+// Type: Bidi
+BEGIN pinout4_xbox_lad_3_
+Fanin Number		0
+Pterm Number		0
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+END
+
+// Signal Name: pinout4_xbox_lad_3_.OE
+// Type: Bidi
+BEGIN pinout4_xbox_lad_3_.OE
+Fanin Number		6
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Node      	s_fsm_counter_1_.Q  	3
+Fanin Node      	s_fsm_counter_2_.Q  	5
+Fanin Node      	s_fsm_counter_0_.Q  	2
+Fanin Node      	inst_s_io_cyc.Q     	9
+Fanin Node      	s_lpc_fsm_state_0_.Q	4
+Fanin Node      	s_lpc_fsm_state_1_.Q	4
+END
+
+// Signal Name: pinout4_xbox_lad_2_
+// Type: Bidi
+BEGIN pinout4_xbox_lad_2_
+Fanin Number		0
+Pterm Number		0
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+END
+
+// Signal Name: pinout4_xbox_lad_2_.OE
+// Type: Bidi
+BEGIN pinout4_xbox_lad_2_.OE
+Fanin Number		6
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Node      	s_fsm_counter_1_.Q  	3
+Fanin Node      	s_fsm_counter_2_.Q  	5
+Fanin Node      	s_fsm_counter_0_.Q  	2
+Fanin Node      	inst_s_io_cyc.Q     	9
+Fanin Node      	s_lpc_fsm_state_0_.Q	4
+Fanin Node      	s_lpc_fsm_state_1_.Q	4
+END
+
+// Signal Name: pinout4_xbox_lad_1_
+// Type: Bidi
+BEGIN pinout4_xbox_lad_1_
+Fanin Number		0
+Pterm Number		0
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+END
+
+// Signal Name: pinout4_xbox_lad_1_.OE
+// Type: Bidi
+BEGIN pinout4_xbox_lad_1_.OE
+Fanin Number		6
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Node      	s_fsm_counter_1_.Q  	3
+Fanin Node      	s_fsm_counter_2_.Q  	5
+Fanin Node      	s_fsm_counter_0_.Q  	2
+Fanin Node      	inst_s_io_cyc.Q     	9
+Fanin Node      	s_lpc_fsm_state_0_.Q	4
+Fanin Node      	s_lpc_fsm_state_1_.Q	4
+END
+
+// Signal Name: pinout4_xbox_lad_0_
+// Type: Bidi
+BEGIN pinout4_xbox_lad_0_
+Fanin Number		0
+Pterm Number		0
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+END
+
+// Signal Name: pinout4_xbox_lad_0_.OE
+// Type: Bidi
+BEGIN pinout4_xbox_lad_0_.OE
+Fanin Number		6
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Node      	s_fsm_counter_1_.Q  	3
+Fanin Node      	s_fsm_counter_2_.Q  	5
+Fanin Node      	s_fsm_counter_0_.Q  	2
+Fanin Node      	inst_s_io_cyc.Q     	9
+Fanin Node      	s_lpc_fsm_state_0_.Q	4
+Fanin Node      	s_lpc_fsm_state_1_.Q	4
+END
+
+// Signal Name: p4out_lcd_d4_d7_3_.D
+// Type: Output_reg
+BEGIN p4out_lcd_d4_d7_3_.D
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Output    	pinout4_xbox_lad_2_.PIN	0
+END
+
+// Signal Name: p4out_lcd_d4_d7_3_.C
+// Type: Output_reg
+BEGIN p4out_lcd_d4_d7_3_.C
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Input     	pin_xbox_lclk.BLIF  	0
+END
+
+// Signal Name: p4out_lcd_d4_d7_3_.CE
+// Type: Output_reg
+BEGIN p4out_lcd_d4_d7_3_.CE
+Fanin Number		8
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		1
+Fanin Node      	s_fsm_counter_1_.Q  	3
+Fanin Node      	s_fsm_counter_2_.Q  	5
+Fanin Node      	s4_io_reg_addr_0_.Q 	1
+Fanin Node      	s4_io_reg_addr_1_.Q 	1
+Fanin Node      	s4_io_reg_addr_2_.Q 	1
+Fanin Node      	s4_io_reg_addr_3_.Q 	1
+Fanin Node      	s_fsm_counter_0_.Q  	2
+Fanin Node      	inst_s_io_cyc.Q     	9
+END
+
+// Signal Name: pout_lcd_rs.D
+// Type: Output_reg
+BEGIN pout_lcd_rs.D
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Output    	pinout4_xbox_lad_1_.PIN	0
+END
+
+// Signal Name: pout_lcd_rs.C
+// Type: Output_reg
+BEGIN pout_lcd_rs.C
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Input     	pin_xbox_lclk.BLIF  	0
+END
+
+// Signal Name: pout_lcd_rs.CE
+// Type: Output_reg
+BEGIN pout_lcd_rs.CE
+Fanin Number		8
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		1
+Fanin Node      	s_fsm_counter_1_.Q  	3
+Fanin Node      	s_fsm_counter_2_.Q  	5
+Fanin Node      	s4_io_reg_addr_0_.Q 	1
+Fanin Node      	s4_io_reg_addr_1_.Q 	1
+Fanin Node      	s4_io_reg_addr_2_.Q 	1
+Fanin Node      	s4_io_reg_addr_3_.Q 	1
+Fanin Node      	s_fsm_counter_0_.Q  	2
+Fanin Node      	inst_s_io_cyc.Q     	9
+END
+
+// Signal Name: pout_lcd_e.D
+// Type: Output_reg
+BEGIN pout_lcd_e.D
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Output    	pinout4_xbox_lad_2_.PIN	0
+END
+
+// Signal Name: pout_lcd_e.C
+// Type: Output_reg
+BEGIN pout_lcd_e.C
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Input     	pin_xbox_lclk.BLIF  	0
+END
+
+// Signal Name: pout_lcd_e.CE
+// Type: Output_reg
+BEGIN pout_lcd_e.CE
+Fanin Number		8
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		1
+Fanin Node      	s_fsm_counter_1_.Q  	3
+Fanin Node      	s_fsm_counter_2_.Q  	5
+Fanin Node      	s4_io_reg_addr_0_.Q 	1
+Fanin Node      	s4_io_reg_addr_1_.Q 	1
+Fanin Node      	s4_io_reg_addr_2_.Q 	1
+Fanin Node      	s4_io_reg_addr_3_.Q 	1
+Fanin Node      	s_fsm_counter_0_.Q  	2
+Fanin Node      	inst_s_io_cyc.Q     	9
+END
+
+// Signal Name: pout_backlight.D
+// Type: Output_reg
+BEGIN pout_backlight.D
+Fanin Number		11
+Pterm Number		15
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		1
+Fanin Output    	pout_backlight.Q    	15
+Fanin Node      	s5_duty_cycle_0_.Q  	3
+Fanin Node      	s5_duty_cycle_1_.Q  	3
+Fanin Node      	s5_duty_cycle_2_.Q  	3
+Fanin Node      	s5_duty_cycle_3_.Q  	3
+Fanin Node      	s5_duty_cycle_4_.Q  	3
+Fanin Node      	s5_pwm_counter_0_.Q 	1
+Fanin Node      	s5_pwm_counter_1_.Q 	2
+Fanin Node      	s5_pwm_counter_2_.Q 	3
+Fanin Node      	s5_pwm_counter_3_.Q 	4
+Fanin Node      	s5_pwm_counter_4_.Q 	1
+END
+
+// Signal Name: pout_backlight.C
+// Type: Output_reg
+BEGIN pout_backlight.C
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Input     	pin_xbox_lclk.BLIF  	0
+END
+
+// Signal Name: p4out_lcd_d4_d7_2_.D
+// Type: Output_reg
+BEGIN p4out_lcd_d4_d7_2_.D
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Output    	pinout4_xbox_lad_1_.PIN	0
+END
+
+// Signal Name: p4out_lcd_d4_d7_2_.C
+// Type: Output_reg
+BEGIN p4out_lcd_d4_d7_2_.C
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Input     	pin_xbox_lclk.BLIF  	0
+END
+
+// Signal Name: p4out_lcd_d4_d7_2_.CE
+// Type: Output_reg
+BEGIN p4out_lcd_d4_d7_2_.CE
+Fanin Number		8
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		1
+Fanin Node      	s_fsm_counter_1_.Q  	3
+Fanin Node      	s_fsm_counter_2_.Q  	5
+Fanin Node      	s4_io_reg_addr_0_.Q 	1
+Fanin Node      	s4_io_reg_addr_1_.Q 	1
+Fanin Node      	s4_io_reg_addr_2_.Q 	1
+Fanin Node      	s4_io_reg_addr_3_.Q 	1
+Fanin Node      	s_fsm_counter_0_.Q  	2
+Fanin Node      	inst_s_io_cyc.Q     	9
+END
+
+// Signal Name: p4out_lcd_d4_d7_1_.D
+// Type: Output_reg
+BEGIN p4out_lcd_d4_d7_1_.D
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Output    	pinout4_xbox_lad_0_.PIN	0
+END
+
+// Signal Name: p4out_lcd_d4_d7_1_.C
+// Type: Output_reg
+BEGIN p4out_lcd_d4_d7_1_.C
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Input     	pin_xbox_lclk.BLIF  	0
+END
+
+// Signal Name: p4out_lcd_d4_d7_1_.CE
+// Type: Output_reg
+BEGIN p4out_lcd_d4_d7_1_.CE
+Fanin Number		8
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		1
+Fanin Node      	s_fsm_counter_1_.Q  	3
+Fanin Node      	s_fsm_counter_2_.Q  	5
+Fanin Node      	s4_io_reg_addr_0_.Q 	1
+Fanin Node      	s4_io_reg_addr_1_.Q 	1
+Fanin Node      	s4_io_reg_addr_2_.Q 	1
+Fanin Node      	s4_io_reg_addr_3_.Q 	1
+Fanin Node      	s_fsm_counter_0_.Q  	2
+Fanin Node      	inst_s_io_cyc.Q     	9
+END
+
+// Signal Name: p4out_lcd_d4_d7_0_.D
+// Type: Output_reg
+BEGIN p4out_lcd_d4_d7_0_.D
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Output    	pinout4_xbox_lad_3_.PIN	0
+END
+
+// Signal Name: p4out_lcd_d4_d7_0_.C
+// Type: Output_reg
+BEGIN p4out_lcd_d4_d7_0_.C
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Input     	pin_xbox_lclk.BLIF  	0
+END
+
+// Signal Name: p4out_lcd_d4_d7_0_.CE
+// Type: Output_reg
+BEGIN p4out_lcd_d4_d7_0_.CE
+Fanin Number		8
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		1
+Fanin Node      	s_fsm_counter_1_.Q  	3
+Fanin Node      	s_fsm_counter_2_.Q  	5
+Fanin Node      	s4_io_reg_addr_0_.Q 	1
+Fanin Node      	s4_io_reg_addr_1_.Q 	1
+Fanin Node      	s4_io_reg_addr_2_.Q 	1
+Fanin Node      	s4_io_reg_addr_3_.Q 	1
+Fanin Node      	s_fsm_counter_0_.Q  	2
+Fanin Node      	inst_s_io_cyc.Q     	9
+END
+
+// Signal Name: s_fsm_counter_1_.D
+// Type: Node_reg
+BEGIN s_fsm_counter_1_.D
+Fanin Number		5
+Pterm Number		3
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		1
+Fanin Node      	s_fsm_counter_1_.Q  	3
+Fanin Node      	s_fsm_counter_0_.Q  	2
+Fanin Node      	s_lpc_fsm_state_0_.Q	4
+Fanin Node      	s_lpc_fsm_state_1_.Q	4
+Fanin Output    	pinout4_xbox_lad_3_.PIN	0
+END
+
+// Signal Name: s_fsm_counter_1_.C
+// Type: Node_reg
+BEGIN s_fsm_counter_1_.C
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Input     	pin_xbox_lclk.BLIF  	0
+END
+
+// Signal Name: s_fsm_counter_1_.CE
+// Type: Node_reg
+BEGIN s_fsm_counter_1_.CE
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Input     	pin_xbox_n_lrst.BLIF	0
+END
+
+// Signal Name: s_fsm_counter_2_.T
+// Type: Node_reg
+BEGIN s_fsm_counter_2_.T
+Fanin Number		7
+Pterm Number		5
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		1
+Fanin Node      	s_fsm_counter_1_.Q  	3
+Fanin Node      	s_fsm_counter_2_.Q  	5
+Fanin Node      	s_fsm_counter_0_.Q  	2
+Fanin Node      	s_lpc_fsm_state_0_.Q	4
+Fanin Node      	s_lpc_fsm_state_1_.Q	4
+Fanin Output    	pinout4_xbox_lad_2_.PIN	0
+Fanin Output    	pinout4_xbox_lad_3_.PIN	0
+END
+
+// Signal Name: s_fsm_counter_2_.C
+// Type: Node_reg
+BEGIN s_fsm_counter_2_.C
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Input     	pin_xbox_lclk.BLIF  	0
+END
+
+// Signal Name: s_fsm_counter_2_.CE
+// Type: Node_reg
+BEGIN s_fsm_counter_2_.CE
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Input     	pin_xbox_n_lrst.BLIF	0
+END
+
+// Signal Name: s5_duty_cycle_0_.D
+// Type: Node_reg
+BEGIN s5_duty_cycle_0_.D
+Fanin Number		4
+Pterm Number		3
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		2
+Fanin Node      	s5_duty_cycle_0_.Q  	3
+Fanin Node      	s_fsm_counter_0_.Q  	2
+Fanin Node      	un30_s_fsm_counter.BLIF	1
+Fanin Output    	pinout4_xbox_lad_2_.PIN	0
+END
+
+// Signal Name: s5_duty_cycle_0_.C
+// Type: Node_reg
+BEGIN s5_duty_cycle_0_.C
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Input     	pin_xbox_lclk.BLIF  	0
+END
+
+// Signal Name: s5_duty_cycle_0_.CE
+// Type: Node_reg
+BEGIN s5_duty_cycle_0_.CE
+Fanin Number		3
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		1
+Fanin Node      	s_fsm_counter_1_.Q  	3
+Fanin Node      	s_fsm_counter_2_.Q  	5
+Fanin Node      	inst_s_io_cyc.Q     	9
+END
+
+// Signal Name: s5_duty_cycle_1_.D
+// Type: Node_reg
+BEGIN s5_duty_cycle_1_.D
+Fanin Number		4
+Pterm Number		3
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		2
+Fanin Node      	s5_duty_cycle_1_.Q  	3
+Fanin Node      	s_fsm_counter_0_.Q  	2
+Fanin Node      	un30_s_fsm_counter.BLIF	1
+Fanin Output    	pinout4_xbox_lad_3_.PIN	0
+END
+
+// Signal Name: s5_duty_cycle_1_.C
+// Type: Node_reg
+BEGIN s5_duty_cycle_1_.C
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Input     	pin_xbox_lclk.BLIF  	0
+END
+
+// Signal Name: s5_duty_cycle_1_.CE
+// Type: Node_reg
+BEGIN s5_duty_cycle_1_.CE
+Fanin Number		3
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		1
+Fanin Node      	s_fsm_counter_1_.Q  	3
+Fanin Node      	s_fsm_counter_2_.Q  	5
+Fanin Node      	inst_s_io_cyc.Q     	9
+END
+
+// Signal Name: s5_duty_cycle_2_.D
+// Type: Node_reg
+BEGIN s5_duty_cycle_2_.D
+Fanin Number		4
+Pterm Number		3
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		2
+Fanin Node      	s5_duty_cycle_2_.Q  	3
+Fanin Node      	s_fsm_counter_0_.Q  	2
+Fanin Node      	un30_s_fsm_counter.BLIF	1
+Fanin Output    	pinout4_xbox_lad_0_.PIN	0
+END
+
+// Signal Name: s5_duty_cycle_2_.C
+// Type: Node_reg
+BEGIN s5_duty_cycle_2_.C
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Input     	pin_xbox_lclk.BLIF  	0
+END
+
+// Signal Name: s5_duty_cycle_2_.CE
+// Type: Node_reg
+BEGIN s5_duty_cycle_2_.CE
+Fanin Number		3
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		1
+Fanin Node      	s_fsm_counter_1_.Q  	3
+Fanin Node      	s_fsm_counter_2_.Q  	5
+Fanin Node      	inst_s_io_cyc.Q     	9
+END
+
+// Signal Name: s5_duty_cycle_3_.D
+// Type: Node_reg
+BEGIN s5_duty_cycle_3_.D
+Fanin Number		4
+Pterm Number		3
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		2
+Fanin Node      	s5_duty_cycle_3_.Q  	3
+Fanin Node      	s_fsm_counter_0_.Q  	2
+Fanin Node      	un30_s_fsm_counter.BLIF	1
+Fanin Output    	pinout4_xbox_lad_1_.PIN	0
+END
+
+// Signal Name: s5_duty_cycle_3_.C
+// Type: Node_reg
+BEGIN s5_duty_cycle_3_.C
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Input     	pin_xbox_lclk.BLIF  	0
+END
+
+// Signal Name: s5_duty_cycle_3_.CE
+// Type: Node_reg
+BEGIN s5_duty_cycle_3_.CE
+Fanin Number		3
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		1
+Fanin Node      	s_fsm_counter_1_.Q  	3
+Fanin Node      	s_fsm_counter_2_.Q  	5
+Fanin Node      	inst_s_io_cyc.Q     	9
+END
+
+// Signal Name: s5_duty_cycle_4_.D
+// Type: Node_reg
+BEGIN s5_duty_cycle_4_.D
+Fanin Number		4
+Pterm Number		3
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		2
+Fanin Node      	s5_duty_cycle_4_.Q  	3
+Fanin Node      	s_fsm_counter_0_.Q  	2
+Fanin Node      	un30_s_fsm_counter.BLIF	1
+Fanin Output    	pinout4_xbox_lad_2_.PIN	0
+END
+
+// Signal Name: s5_duty_cycle_4_.C
+// Type: Node_reg
+BEGIN s5_duty_cycle_4_.C
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Input     	pin_xbox_lclk.BLIF  	0
+END
+
+// Signal Name: s5_duty_cycle_4_.CE
+// Type: Node_reg
+BEGIN s5_duty_cycle_4_.CE
+Fanin Number		3
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		1
+Fanin Node      	s_fsm_counter_1_.Q  	3
+Fanin Node      	s_fsm_counter_2_.Q  	5
+Fanin Node      	inst_s_io_cyc.Q     	9
+END
+
+// Signal Name: s4_io_reg_addr_0_.D
+// Type: Node_reg
+BEGIN s4_io_reg_addr_0_.D
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Output    	pinout4_xbox_lad_0_.PIN	0
+END
+
+// Signal Name: s4_io_reg_addr_0_.C
+// Type: Node_reg
+BEGIN s4_io_reg_addr_0_.C
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Input     	pin_xbox_lclk.BLIF  	0
+END
+
+// Signal Name: s4_io_reg_addr_0_.CE
+// Type: Node_reg
+BEGIN s4_io_reg_addr_0_.CE
+Fanin Number		6
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		1
+Fanin Input     	pin_xbox_n_lrst.BLIF	0
+Fanin Node      	s_fsm_counter_1_.Q  	3
+Fanin Node      	s_fsm_counter_2_.Q  	5
+Fanin Node      	s_fsm_counter_0_.Q  	2
+Fanin Node      	s_lpc_fsm_state_0_.Q	4
+Fanin Node      	s_lpc_fsm_state_1_.Q	4
+END
+
+// Signal Name: s4_io_reg_addr_1_.D
+// Type: Node_reg
+BEGIN s4_io_reg_addr_1_.D
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Output    	pinout4_xbox_lad_1_.PIN	0
+END
+
+// Signal Name: s4_io_reg_addr_1_.C
+// Type: Node_reg
+BEGIN s4_io_reg_addr_1_.C
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Input     	pin_xbox_lclk.BLIF  	0
+END
+
+// Signal Name: s4_io_reg_addr_1_.CE
+// Type: Node_reg
+BEGIN s4_io_reg_addr_1_.CE
+Fanin Number		6
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		1
+Fanin Input     	pin_xbox_n_lrst.BLIF	0
+Fanin Node      	s_fsm_counter_1_.Q  	3
+Fanin Node      	s_fsm_counter_2_.Q  	5
+Fanin Node      	s_fsm_counter_0_.Q  	2
+Fanin Node      	s_lpc_fsm_state_0_.Q	4
+Fanin Node      	s_lpc_fsm_state_1_.Q	4
+END
+
+// Signal Name: s4_io_reg_addr_2_.D
+// Type: Node_reg
+BEGIN s4_io_reg_addr_2_.D
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Output    	pinout4_xbox_lad_2_.PIN	0
+END
+
+// Signal Name: s4_io_reg_addr_2_.C
+// Type: Node_reg
+BEGIN s4_io_reg_addr_2_.C
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Input     	pin_xbox_lclk.BLIF  	0
+END
+
+// Signal Name: s4_io_reg_addr_2_.CE
+// Type: Node_reg
+BEGIN s4_io_reg_addr_2_.CE
+Fanin Number		6
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		1
+Fanin Input     	pin_xbox_n_lrst.BLIF	0
+Fanin Node      	s_fsm_counter_1_.Q  	3
+Fanin Node      	s_fsm_counter_2_.Q  	5
+Fanin Node      	s_fsm_counter_0_.Q  	2
+Fanin Node      	s_lpc_fsm_state_0_.Q	4
+Fanin Node      	s_lpc_fsm_state_1_.Q	4
+END
+
+// Signal Name: s4_io_reg_addr_3_.D
+// Type: Node_reg
+BEGIN s4_io_reg_addr_3_.D
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Output    	pinout4_xbox_lad_3_.PIN	0
+END
+
+// Signal Name: s4_io_reg_addr_3_.C
+// Type: Node_reg
+BEGIN s4_io_reg_addr_3_.C
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Input     	pin_xbox_lclk.BLIF  	0
+END
+
+// Signal Name: s4_io_reg_addr_3_.CE
+// Type: Node_reg
+BEGIN s4_io_reg_addr_3_.CE
+Fanin Number		6
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		1
+Fanin Input     	pin_xbox_n_lrst.BLIF	0
+Fanin Node      	s_fsm_counter_1_.Q  	3
+Fanin Node      	s_fsm_counter_2_.Q  	5
+Fanin Node      	s_fsm_counter_0_.Q  	2
+Fanin Node      	s_lpc_fsm_state_0_.Q	4
+Fanin Node      	s_lpc_fsm_state_1_.Q	4
+END
+
+// Signal Name: s_fsm_counter_0_.D
+// Type: Node_reg
+BEGIN s_fsm_counter_0_.D
+Fanin Number		4
+Pterm Number		2
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		1
+Fanin Node      	s_fsm_counter_0_.Q  	2
+Fanin Node      	s_lpc_fsm_state_0_.Q	4
+Fanin Node      	s_lpc_fsm_state_1_.Q	4
+Fanin Output    	pinout4_xbox_lad_3_.PIN	0
+END
+
+// Signal Name: s_fsm_counter_0_.C
+// Type: Node_reg
+BEGIN s_fsm_counter_0_.C
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Input     	pin_xbox_lclk.BLIF  	0
+END
+
+// Signal Name: s_fsm_counter_0_.CE
+// Type: Node_reg
+BEGIN s_fsm_counter_0_.CE
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Input     	pin_xbox_n_lrst.BLIF	0
+END
+
+// Signal Name: inst_s_io_cyc.D
+// Type: Node_reg
+BEGIN inst_s_io_cyc.D
+Fanin Number		10
+Pterm Number		9
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		1
+Fanin Node      	s_fsm_counter_1_.Q  	3
+Fanin Node      	s_fsm_counter_2_.Q  	5
+Fanin Node      	s_fsm_counter_0_.Q  	2
+Fanin Node      	inst_s_io_cyc.Q     	9
+Fanin Node      	s_lpc_fsm_state_0_.Q	4
+Fanin Node      	s_lpc_fsm_state_1_.Q	4
+Fanin Output    	pinout4_xbox_lad_0_.PIN	0
+Fanin Output    	pinout4_xbox_lad_1_.PIN	0
+Fanin Output    	pinout4_xbox_lad_2_.PIN	0
+Fanin Output    	pinout4_xbox_lad_3_.PIN	0
+END
+
+// Signal Name: inst_s_io_cyc.C
+// Type: Node_reg
+BEGIN inst_s_io_cyc.C
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Input     	pin_xbox_lclk.BLIF  	0
+END
+
+// Signal Name: inst_s_io_cyc.CE
+// Type: Node_reg
+BEGIN inst_s_io_cyc.CE
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Input     	pin_xbox_n_lrst.BLIF	0
+END
+
+// Signal Name: s5_pwm_counter_0_.D
+// Type: Node_reg
+BEGIN s5_pwm_counter_0_.D
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		1
+Fanin Node      	s5_pwm_counter_0_.Q 	1
+END
+
+// Signal Name: s5_pwm_counter_0_.C
+// Type: Node_reg
+BEGIN s5_pwm_counter_0_.C
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Input     	pin_xbox_lclk.BLIF  	0
+END
+
+// Signal Name: s5_pwm_counter_1_.D
+// Type: Node_reg
+BEGIN s5_pwm_counter_1_.D
+Fanin Number		2
+Pterm Number		2
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		1
+Fanin Node      	s5_pwm_counter_0_.Q 	1
+Fanin Node      	s5_pwm_counter_1_.Q 	2
+END
+
+// Signal Name: s5_pwm_counter_1_.C
+// Type: Node_reg
+BEGIN s5_pwm_counter_1_.C
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Input     	pin_xbox_lclk.BLIF  	0
+END
+
+// Signal Name: s5_pwm_counter_2_.D
+// Type: Node_reg
+BEGIN s5_pwm_counter_2_.D
+Fanin Number		3
+Pterm Number		3
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		1
+Fanin Node      	s5_pwm_counter_0_.Q 	1
+Fanin Node      	s5_pwm_counter_1_.Q 	2
+Fanin Node      	s5_pwm_counter_2_.Q 	3
+END
+
+// Signal Name: s5_pwm_counter_2_.C
+// Type: Node_reg
+BEGIN s5_pwm_counter_2_.C
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Input     	pin_xbox_lclk.BLIF  	0
+END
+
+// Signal Name: s5_pwm_counter_3_.D
+// Type: Node_reg
+BEGIN s5_pwm_counter_3_.D
+Fanin Number		4
+Pterm Number		4
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		1
+Fanin Node      	s5_pwm_counter_0_.Q 	1
+Fanin Node      	s5_pwm_counter_1_.Q 	2
+Fanin Node      	s5_pwm_counter_2_.Q 	3
+Fanin Node      	s5_pwm_counter_3_.Q 	4
+END
+
+// Signal Name: s5_pwm_counter_3_.C
+// Type: Node_reg
+BEGIN s5_pwm_counter_3_.C
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Input     	pin_xbox_lclk.BLIF  	0
+END
+
+// Signal Name: s5_pwm_counter_4_.D.X1
+// Type: Node_reg
+BEGIN s5_pwm_counter_4_.D.X1
+Fanin Number		5
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		1
+Fanin Node      	s5_pwm_counter_0_.Q 	1
+Fanin Node      	s5_pwm_counter_1_.Q 	2
+Fanin Node      	s5_pwm_counter_2_.Q 	3
+Fanin Node      	s5_pwm_counter_3_.Q 	4
+Fanin Node      	s5_pwm_counter_4_.Q 	1
+END
+
+// Signal Name: s5_pwm_counter_4_.D.X2
+// Type: Node_reg
+BEGIN s5_pwm_counter_4_.D.X2
+Fanin Number		5
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		1
+Fanin Node      	s5_pwm_counter_0_.Q 	1
+Fanin Node      	s5_pwm_counter_1_.Q 	2
+Fanin Node      	s5_pwm_counter_2_.Q 	3
+Fanin Node      	s5_pwm_counter_3_.Q 	4
+Fanin Node      	s5_pwm_counter_4_.Q 	1
+END
+
+// Signal Name: s5_pwm_counter_4_.C
+// Type: Node_reg
+BEGIN s5_pwm_counter_4_.C
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Input     	pin_xbox_lclk.BLIF  	0
+END
+
+// Signal Name: s_lpc_fsm_state_0_.D
+// Type: Node_reg
+BEGIN s_lpc_fsm_state_0_.D
+Fanin Number		10
+Pterm Number		4
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		1
+Fanin Input     	pin_xbox_n_lrst.BLIF	0
+Fanin Node      	s_fsm_counter_1_.Q  	3
+Fanin Node      	s_fsm_counter_2_.Q  	5
+Fanin Node      	s_fsm_counter_0_.Q  	2
+Fanin Node      	s_lpc_fsm_state_0_.Q	4
+Fanin Node      	s_lpc_fsm_state_1_.Q	4
+Fanin Output    	pinout4_xbox_lad_0_.PIN	0
+Fanin Output    	pinout4_xbox_lad_1_.PIN	0
+Fanin Output    	pinout4_xbox_lad_2_.PIN	0
+Fanin Output    	pinout4_xbox_lad_3_.PIN	0
+END
+
+// Signal Name: s_lpc_fsm_state_0_.C
+// Type: Node_reg
+BEGIN s_lpc_fsm_state_0_.C
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Input     	pin_xbox_lclk.BLIF  	0
+END
+
+// Signal Name: s_lpc_fsm_state_1_.D
+// Type: Node_reg
+BEGIN s_lpc_fsm_state_1_.D
+Fanin Number		6
+Pterm Number		4
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		1
+Fanin Input     	pin_xbox_n_lrst.BLIF	0
+Fanin Node      	s_fsm_counter_1_.Q  	3
+Fanin Node      	s_fsm_counter_2_.Q  	5
+Fanin Node      	s_lpc_fsm_state_0_.Q	4
+Fanin Node      	s_lpc_fsm_state_1_.Q	4
+Fanin Output    	pinout4_xbox_lad_3_.PIN	0
+END
+
+// Signal Name: s_lpc_fsm_state_1_.C
+// Type: Node_reg
+BEGIN s_lpc_fsm_state_1_.C
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Input     	pin_xbox_lclk.BLIF  	0
+END
+
+// Signal Name: un30_s_fsm_counter
+// Type: Node
+BEGIN un30_s_fsm_counter
+Fanin Number		4
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Node      	s4_io_reg_addr_0_.Q 	1
+Fanin Node      	s4_io_reg_addr_1_.Q 	1
+Fanin Node      	s4_io_reg_addr_2_.Q 	1
+Fanin Node      	s4_io_reg_addr_3_.Q 	1
+END
+
+// Design 'lcdcheapie_entity' used clock signal list:
+CLOCK	pin_xbox_lclk
+

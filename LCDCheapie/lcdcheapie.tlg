@@ -1,0 +1,36 @@
+
+// Batch Timer Log File (Release Version: 2.0.00.17.20.15)
+
+//  Project = lcdcheapie
+//  Family  = lc4k
+//  Device  = LC4032V
+//  Speed   = -7.5
+//  Voltage = 3.3
+//  Operating Condition = COM
+//  Data sheet version  = 3.2
+
+//  Pass Bidirection = OFF
+//  Pass S/R = OFF
+//  Pass Latch = OFF
+//  Pass Clock = OFF
+//  Maximum Paths = 20
+//  T_SU Endpoints D/T inputs = ON
+//  T_SU Endpoints CE inputs = OFF
+//  T_SU Endpoints S/R inputs = OFF
+//  T_SU Endpoints RAM gated = ON
+//  Fmax of CE = ON
+//  Fmax of RAM = ON
+
+//  Location(From => To)
+//    Pin number: numeric number preceded by "p", BGA number as is
+//    Macrocell number: Segment#,GLB#,Macrocell#
+//                      Segment#: starts from 0 (if applicable)
+//                      GLB#: starts from A..Z, AA..ZZ
+//                      Macrocell#: starts from 0 to 31
+
+//  Register-to-register critical path delay: 11.05 ns
+//    -    0.67  tCOi                              s4_io_reg_addr_1_.C      ==>  s4_io_reg_addr_1_.Q
+//    -    3.71  tFBK+tROUTE+tMCELL                s4_io_reg_addr_1_.Q      ==>  N_37_i
+//    -    1.24  tPDi                              N_37_i                   ==>  N_37_i
+//    -    3.18  tFBK+tROUTE+tBLA+tPTCLK           N_37_i                   ==>  p4out_lcd_d4_d7_0_.CE
+//    -    2.25  tCES                              p4out_lcd_d4_d7_0_.CE    ==>  p4out_lcd_d4_d7_0_.C

@@ -1,0 +1,1 @@
+-w -s "D:\dev\xblast\aladdin_xt_mods\LCDCheapie\work\library.cfg"  -j "D:\dev\xblast\aladdin_xt_mods\LCDCheapie\work\projlib.cfg"  -d "D:\dev\xblast\aladdin_xt_mods\LCDCheapie\work\compile"   -work work  -O3 -e 100 "testbench.vhd"

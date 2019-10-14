@@ -1,0 +1,23 @@
+#defaultlanguage:vhdl
+#OPTIONS:"|-top|lcdcheapie_entity|-prodtype|synplify_pro|-nostructver|-encrypt|-pro|-lite|-compiler_compatible|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-ignore_undefined_lib|-lib|work"
+#CUR:"D:\\ispLEVER_Classic2_0\\synpbase\\bin64\\c_vhdl.exe":1401245704
+#CUR:"D:\\ispLEVER_Classic2_0\\synpbase\\lib\\vhd\\location.map":1310478974
+#CUR:"D:\\ispLEVER_Classic2_0\\synpbase\\lib\\vhd\\std.vhd":1401245322
+#CUR:"D:\\ispLEVER_Classic2_0\\synpbase\\lib\\vhd\\snps_haps_pkg.vhd":1401245322
+#CUR:"D:\\ispLEVER_Classic2_0\\synpbase\\lib\\vhd\\std1164.vhd":1401245322
+#CUR:"D:\\ispLEVER_Classic2_0\\synpbase\\lib\\vhd\\numeric.vhd":1401245322
+#CUR:"D:\\ispLEVER_Classic2_0\\synpbase\\lib\\vhd\\umr_capim.vhd":1401245568
+#CUR:"D:\\ispLEVER_Classic2_0\\synpbase\\lib\\vhd\\arith.vhd":1401245322
+#CUR:"D:\\ispLEVER_Classic2_0\\synpbase\\lib\\vhd\\unsigned.vhd":1401245322
+#CUR:"D:\\dev\\xblast\\aladdin_xt_mods\\lcdcheapie\\lcd_cheapie.vhd":1566181472
+0 "D:\dev\xblast\aladdin_xt_mods\lcdcheapie\lcd_cheapie.vhd" vhdl
+
+# Dependency Lists (Uses list)
+0 -1
+
+# Dependency Lists (Users Of)
+0 -1
+
+# Design Unit to File Association
+arch work lcdcheapie_entity arch_lcdcheapie 0
+module work lcdcheapie_entity 0

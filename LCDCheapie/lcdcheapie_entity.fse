@@ -1,0 +1,12 @@
+
+fsm_encoding {710841081} sequential
+
+fsm_state_encoding {710841081} lpc_fsm_wait_start {00}
+
+fsm_state_encoding {710841081} lpc_fsm_get_cyc {01}
+
+fsm_state_encoding {710841081} lpc_fsm_get_addr {10}
+
+fsm_state_encoding {710841081} lpc_fsm_data {11}
+
+fsm_registers {710841081} {s_lpc_fsm_state[1]}  {s_lpc_fsm_state[0]} 

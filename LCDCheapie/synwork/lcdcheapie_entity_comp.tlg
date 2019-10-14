@@ -1,0 +1,10 @@
+@N: CD630 :"D:\dev\xblast\aladdin_xt_mods\lcdcheapie\lcd_cheapie.vhd":30:7:30:23|Synthesizing work.lcdcheapie_entity.arch_lcdcheapie 
+@N: CD233 :"D:\dev\xblast\aladdin_xt_mods\lcdcheapie\lcd_cheapie.vhd":73:17:73:18|Using sequential encoding for type lpc_fsm
+Post processing for work.lcdcheapie_entity.arch_lcdcheapie
+@N: CL201 :"D:\dev\xblast\aladdin_xt_mods\lcdcheapie\lcd_cheapie.vhd":108:4:108:5|Trying to extract state machine for register s_lpc_fsm_state
+Extracted state machine for register s_lpc_fsm_state
+State machine has 4 reachable states with original encodings of:
+   00
+   01
+   10
+   11

@@ -1,0 +1,11 @@
+[Files List]
+D:\ispLEVER_Classic2_0\active-hdl\vlib\std/src/standard.vhd=S
+D:\ispLEVER_Classic2_0\active-hdl\vlib\std/src/textio.vhd=S
+D:\ispLEVER_Classic2_0\active-hdl\vlib\ieee/src/std_logic_1164.vhdl=S
+D:\ispLEVER_Classic2_0\active-hdl\vlib\ieee/src/std_logic_1164-body.vhdl=S
+D:\ispLEVER_Classic2_0\active-hdl\vlib\ieee/src/arith_p.vhd=S
+D:\ispLEVER_Classic2_0\active-hdl\vlib\ieee/src/arith_b.vhd=S
+D:\ispLEVER_Classic2_0\active-hdl\vlib\ieee/src/unsigned_p.vhd=S
+D:\ispLEVER_Classic2_0\active-hdl\vlib\ieee/src/unsigned_b.vhd=S
+D:\dev\xblast\aladdin_xt_mods\LCDCheapie/lcd_cheapie.vhd=S
+D:\dev\xblast\aladdin_xt_mods\LCDCheapie/testbench.vhd=S

@@ -1,0 +1,1 @@
+-w -s "D:\dev\xblast\aladdin_xt_mods\1mb_LPCmod_protect\work\library.cfg"  -j "D:\dev\xblast\aladdin_xt_mods\1mb_LPCmod_protect\work\projlib.cfg"  -d "D:\dev\xblast\aladdin_xt_mods\1mb_LPCmod_protect\work\compile"   -work work  -O3 -e 100 "lpcmod_tb_id.vhd"

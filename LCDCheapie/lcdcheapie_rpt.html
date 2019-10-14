@@ -1,0 +1,672 @@
+<HTML>
+<HEAD><TITLE>HTML_REPORT_FILE</TITLE>
+<STYLE TYPE="text/css">
+<!--
+.blink {text-decoration:blink}
+.ms  {font-size: 10pt; font-family: monospace; font-weight: normal}
+.msb {font-size: 10pt; font-family: monospace; font-weight: bold  }
+-->
+</STYLE>
+</HEAD>
+<PRE>
+<A name="Top"></A><H2 align=center> ispLEVER Classic 2.0.00.17.20.15 Fitter Report File </H2>
+<H2 align=center>Copyright(C), 1992-2012, Lattice Semiconductor Corporation</H2>
+<H2 align=center>All Rights Reserved</H2>
+
+
+The Basic/Detailed Report Format can be selected in the dialog box
+Tools->Fitter Report File Format...
+
+<A name="Project_Summary"></A><FONT COLOR=maroon><U><B><big>Project_Summary</big></B></U></FONT>
+<BR>
+Project Name         :  lcdcheapie
+Project Path         :  D:\dev\xblast\aladdin_xt_mods\LCDCheapie
+Project Fitted on    :  Sun Aug 18 23:17:06 2019
+
+Device               :  M4032_30
+Package              :  44
+GLB Input Mux Size   :  6
+Available Blocks     :  2
+Speed                :  -7.5
+Part Number          :  LC4032V-75T44C
+Source Format        :  Pure_VHDL
+
+
+<font color=green size=4><span class=blink><strong><B>Project 'lcdcheapie' Fit Successfully!</B></strong></span></font>
+
+
+<A name="Compilation_Times"></A><FONT COLOR=maroon><U><B><big>Compilation_Times</big></B></U></FONT>
+<BR>
+Prefit Time                     0 secs
+Load Design Time                0.03 secs
+Partition Time                  0.01 secs
+Place Time                      0.00 secs
+Route Time                      0.00 secs
+Total Fit Time                  00:00:01
+
+
+<A name="Design_Summary"></A><FONT COLOR=maroon><U><B><big>Design_Summary</big></B></U></FONT>
+<BR>
+Total Input Pins                2
+Total Logic Functions           32
+  Total Output Pins             7
+  Total Bidir I/O Pins          4
+  Total Buried Nodes            21
+Total Flip-Flops                27
+  Total D Flip-Flops            26
+  Total T Flip-Flops            1
+  Total Latches                 0
+Total Product Terms             135
+
+Total Reserved Pins             0
+Total Locked Pins               13
+Total Locked Nodes              0
+
+Total Unique Output Enables     1
+Total Unique Clocks             1
+Total Unique Clock Enables      5
+Total Unique Resets             0
+Total Unique Presets            0
+
+Fmax Logic Levels               2
+
+
+<A name="Device_Resource_Summary"></A><FONT COLOR=maroon><U><B><big>Device_Resource_Summary</big></B></U></FONT>
+<BR>
+<B>                                 Device
+                                 Total    Used   Not Used   Utilization
+-----------------------------------------------------------------------
+</B>Dedicated Pins
+  Clock/Input Pins                  2        1      1    -->    50
+  I/O / Enable Pins                 2        1      1    -->    50
+I/O Pins                           28       11     17    -->    39
+Logic Functions                    32       32      0    -->   100
+  Input Registers                  30        0     30    -->     0
+
+GLB Inputs                         72       40     32    -->    55
+Logical Product Terms             160       96     64    -->    60
+Occupied GLBs                       2        2      0    -->   100
+Macrocells                         32       32      0    -->   100
+
+Control Product Terms:
+  GLB Clock/Clock Enables           2        2      0    -->   100
+  GLB Reset/Presets                 2        0      2    -->     0
+  Macrocell Clocks                 32        0     32    -->     0
+  Macrocell Clock Enables          32       11     21    -->    34
+  Macrocell Enables                32        0     32    -->     0
+  Macrocell Resets                 32        0     32    -->     0
+  Macrocell Presets                32        0     32    -->     0
+
+Global Routing Pool                64       27     37    -->    42
+  GRP from IFB                     ..        5     ..    -->    ..
+    (from input signals)           ..        1     ..    -->    ..
+    (from output signals)          ..        0     ..    -->    ..
+    (from bidir signals)           ..        4     ..    -->    ..
+  GRP from MFB                     ..       22     ..    -->    ..
+----------------------------------------------------------------------
+
+&lt;Note&gt; 1 : The available PT is the product term that has not been used.
+&lt;Note&gt; 2 : IFB is I/O feedback.
+&lt;Note&gt; 3 : MFB is macrocell feedback.
+
+
+<A name="GLB_Resource_Summary"></A><FONT COLOR=maroon><U><B><big>GLB_Resource_Summary</big></B></U></FONT>
+<BR>
+<B>                                                                                     # of PT
+               ---  Fanin  ---    I/O    Input  Macrocells       Macrocells   Logic  clusters
+             Unique Shared Total  Pins    Regs Used Inaccessible  available    PTs   used
+-------------------------------------------------------------------------------------------
+Maximum
+  GLB                      36      *(1)     8   --     --             16       80       16
+</B>-------------------------------------------------------------------------------------------
+  GLB    A      4    13    17      6/15     0   16      0              0       49       16
+  GLB    B      4    19    23      5/15     0   16      0              0       47       15
+-------------------------------------------------------------------------------------------
+TOTALS:         8    32    40     11/30     0   32      0              0       96       31
+
+&lt;Note&gt; 1 : For ispMACH 4000 devices, the number of IOs depends on the GLB.
+&lt;Note&gt; 2 : Four rightmost columns above reflect last status of the placement process.
+
+
+<A name="GLB_Control_Summary"></A><FONT COLOR=maroon><U><B><big>GLB_Control_Summary</big></B></U></FONT>
+<BR>
+<B>           Shared Shared | Mcell  Mcell  Mcell  Mcell  Mcell 
+           Clk/CE Rst/Pr | Clock  CE     Enable Reset  Preset
+------------------------------------------------------------------------------
+Maximum
+  GLB        1      1        16     16     16     16     16  
+==============================================================================
+</B>  GLB    A   1      0         0      9      0      0      0
+  GLB    B   1      0         0      2      0      0      0
+------------------------------------------------------------------------------
+
+&lt;Note&gt; 1 : For ispMACH 4000 devices, the number of output enables depends on the GLB.
+
+
+<A name="Optimizer_and_Fitter_Options"></A><FONT COLOR=maroon><U><B><big>Optimizer_and_Fitter_Options</big></B></U></FONT>
+<BR>
+Pin Assignment :                       Yes
+Group Assignment :                     No
+Pin Reservation :                      No
+
+@Ignore_Project_Constraints :
+  Pin Assignments :                    No
+      Keep Block Assignment            --
+      Keep Segment Assignment          --
+  Group Assignments :                  No
+  Macrocell Assignment :               No
+      Keep Block Assignment            --
+      Keep Segment Assignment          --
+
+@Backannotate_Project_Constraints
+  Pin Assignments :                    No
+  Pin And Block Assignments :          No
+  Pin, Macrocell and Block :           No
+
+@Timing_Constraints :                  No
+
+@Global_Project_Optimization :
+  Balanced Partitioning :              No
+  Spread Placement :                   Yes
+
+  Note :
+    Pack Design :
+       Balanced Partitioning = No
+       Spread Placement      = No
+    Spread Design :
+       Balanced Partitioning = Yes
+       Spread Placement      = Yes
+
+
+@Logic_Synthesis :
+  Logic Reduction :                    Yes
+  Node Collapsing :                    FMAX
+  Fmax_Logic_Level :                   7
+  D/T Synthesis :                      Yes
+  XOR Synthesis :                      Yes
+  Max. P-Term for Collapsing :         16
+  Max. P-Term for Splitting :          80
+  Max Symbols :                        24
+
+@Utilization_options
+  Max. % of Macrocells used :          100
+@Usercode                               (HEX)
+@IO_Types                              Default = LVCMOS18 (2)
+@Output_Slew_Rate                      Default = FAST (2)
+@Power                                 Default = HIGH (2)
+@Pull                                  Default = PULLUP_UP (2)
+@Fast_Bypass                           Default = None (2)
+@ORP_Bypass                            Default = None
+@Input_Registers                       Default = None (2)
+@Register_Powerup                      Default = None
+
+Device Options:
+&lt;Note&gt; 1 : Reserved unused I/Os can be independently driven to Low or High, and does not
+           follow the drive level set for the Global Configure Unused I/O Option.
+&lt;Note&gt; 2 : For user-specified constraints on individual signals, refer to the Output,
+           Bidir and Buried Signal Lists.
+
+
+<A name="Pinout_Listing"></A><FONT COLOR=maroon><U><B><big>Pinout_Listing</big></B></U></FONT>
+<BR>
+<B>      | Pin   | Bank |GLB |Assigned|                 | Signal|
+Pin No| Type  |Number|Pad |Pin     |     I/O Type    | Type  | Signal name
+</B>-------------------------------------------------------------------------------------
+1     | TDI   |   -  |    |        |                 |       |
+2     |  I_O  |   0  | A5 |    *   |LVCMOS33         | Input |<A href=#7>pin_xbox_n_lrst</A>
+3     |  I_O  |   0  | A6 |        |                 |       |
+4     |  I_O  |   0  | A7 |        |                 |       |
+5     |GNDIO0 |   -  |    |        |                 |       |
+6     |VCCIO0 |   -  |    |        |                 |       |
+7     |  I_O  |   0  | A8 |        |                 |       |
+8     |  I_O  |   0  | A9 |        |                 |       |
+9     |  I_O  |   0  | A10|    *   |LVCMOS33         | Output|<A href=#13>pout_lcd_rs</A>
+10    | TCK   |   -  |    |        |                 |       |
+11    | VCC   |   -  |    |        |                 |       |
+12    | GND   |   -  |    |        |                 |       |
+13    |  I_O  |   0  | A12|        |                 |       |
+14    |  I_O  |   0  | A13|        |                 |       |
+15    |  I_O  |   0  | A14|        |                 |       |
+16    |  I_O  |   0  | A15|        |                 |       |
+17    |INCLK2 |   1  |    |        |                 |       |
+18    |  I_O  |   1  | B0 |        |                 |       |
+19    |  I_O  |   1  | B1 |        |                 |       |
+20    |  I_O  |   1  | B2 |        |                 |       |
+21    |  I_O  |   1  | B3 |    *   |LVCMOS33         | Bidir |<A href=#6>pinout4_xbox_lad_3_</A>
+22    |  I_O  |   1  | B4 |    *   |LVCMOS33         | Bidir |<A href=#9>pinout4_xbox_lad_2_</A>
+23    | TMS   |   -  |    |        |                 |       |
+24    |  I_O  |   1  | B5 |        |                 |       |
+25    |  I_O  |   1  | B6 |        |                 |       |
+26    |  I_O  |   1  | B7 |    *   |LVCMOS33         | Output|<A href=#15>pout_backlight</A>
+27    |GNDIO1 |   -  |    |        |                 |       |
+28    |VCCIO1 |   -  |    |        |                 |       |
+29    |  I_O  |   1  | B8 |    *   |LVCMOS33         | Output|<A href=#14>pout_lcd_e</A>
+30    |  I_O  |   1  | B9 |        |                 |       |
+31    |  I_O  |   1  | B10|        |                 |       |
+32    | TDO   |   -  |    |        |                 |       |
+33    | VCC   |   -  |    |        |                 |       |
+34    | GND   |   -  |    |        |                 |       |
+35    |  I_O  |   1  | B12|        |                 |       |
+36    |  I_O  |   1  | B13|        |                 |       |
+37    |  I_O  |   1  | B14|    *   |LVCMOS33         | Bidir |<A href=#10>pinout4_xbox_lad_1_</A>
+38    | I_O/OE|   1  | B15|    *   |LVCMOS33         | Bidir |<A href=#11>pinout4_xbox_lad_0_</A>
+39    |INCLK0 |   0  |    |    *   |LVCMOS33         | Input |<A href=#8>pin_xbox_lclk</A>
+40    | I_O/OE|   0  | A0 |        |                 |       |
+41    |  I_O  |   0  | A1 |    *   |LVCMOS33         | Output|<A href=#12>p4out_lcd_d4_d7_3_</A>
+42    |  I_O  |   0  | A2 |    *   |LVCMOS33         | Output|<A href=#16>p4out_lcd_d4_d7_2_</A>
+43    |  I_O  |   0  | A3 |    *   |LVCMOS33         | Output|<A href=#17>p4out_lcd_d4_d7_1_</A>
+44    |  I_O  |   0  | A4 |    *   |LVCMOS33         | Output|<A href=#18>p4out_lcd_d4_d7_0_</A>
+-------------------------------------------------------------------------------------
+
+&lt;Note&gt; GLB Pad : This notation refers to the GLB I/O pad number in the device.
+&lt;Note&gt; Assigned Pin : user or dedicated input assignment (E.g. Clock pins).
+&lt;Note&gt; Pin Type : 
+          ClkIn : Dedicated input or clock pin 
+           CLK  : Dedicated clock pin
+           I_O  : Input/Output pin
+           INP  : Dedicated input pin
+           JTAG : JTAG Control and test pin
+           NC   : No connected
+
+
+<A name="Input_Signal_List"></A><FONT COLOR=maroon><U><B><big>Input_Signal_List</big></B></U></FONT>
+<BR>
+<B>                Input
+         Pin    Fanout
+ Pin GLB Type         Pullup Signal
+</B>--------------------------------------------
+  39  -- INCLK    --      Up <A name=8>pin_xbox_lclk</A>
+   2   A  I/O   2 AB      Up <A name=7>pin_xbox_n_lrst</A>
+--------------------------------------------
+
+
+<A name="Output_Signal_List"></A><FONT COLOR=maroon><U><B><big>Output_Signal_List</big></B></U></FONT>
+<BR>
+<B>          I         C      P R P       O Output
+          N         L Mc   R E U C O F B Fanout
+ Pin GLB  P LL PTs  S Type E S P E E P P       Slew Pullup Signal
+</B>-----------------------------------------------------------------------------
+  44   A  9  -   2  2 DFF      R *         --  Fast     Up <A href=#18>p4out_lcd_d4_d7_0_</A>
+  43   A  9  -   2  2 DFF      R *         --  Fast     Up <A href=#17>p4out_lcd_d4_d7_1_</A>
+  42   A  9  -   2  2 DFF      R *         --  Fast     Up <A href=#16>p4out_lcd_d4_d7_2_</A>
+  41   A  9  -   2  2 DFF      R *         --  Fast     Up <A href=#12>p4out_lcd_d4_d7_3_</A>
+  26   B 11  1  15  3 DFF      R         1 -B  Fast     Up <A href=#15>pout_backlight</A>
+  29   B  9  -   2  2 DFF      R *         --  Fast     Up <A href=#14>pout_lcd_e</A>
+   9   A  9  -   2  1 DFF      R *         --  Fast     Up <A href=#13>pout_lcd_rs</A>
+-----------------------------------------------------------------------------
+
+&lt;Note&gt; CLS = Number of clusters used
+       INP = Number of input signals
+       PTs = Number of product terms
+        LL = Number of logic levels
+       PRE = Has preset equation
+       RES = Has reset equation
+       PUP = Power-Up initial state: R=Reset, S=Set
+        CE = Has clock enable equation
+        OE = Has output enable equation
+        FP = Fast path used
+       OBP = ORP bypass used
+
+
+<A name="Bidir_Signal_List"></A><FONT COLOR=maroon><U><B><big>Bidir_Signal_List</big></B></U></FONT>
+<BR>
+<B>          I         C      P R P       O Bidir
+          N         L Mc   R E U C O F B Fanout
+ Pin GLB  P LL PTs  S Type E S P E E P P       Slew Pullup Signal
+</B>------------------------------------------------------------------------------
+  38   B  0  -   0  1 COM          *     1 A-  Fast     Up <A href=#11>pinout4_xbox_lad_0_</A>
+  37   B  0  -   0  1 COM          *     2 AB  Fast     Up <A href=#10>pinout4_xbox_lad_1_</A>
+  22   B  0  -   0  1 COM          *     2 AB  Fast     Up <A href=#9>pinout4_xbox_lad_2_</A>
+  21   B  0  -   0  1 COM          *     2 AB  Fast     Up <A href=#6>pinout4_xbox_lad_3_</A>
+------------------------------------------------------------------------------
+
+&lt;Note&gt; CLS = Number of clusters used
+       INP = Number of input signals
+       PTs = Number of product terms
+        LL = Number of logic levels
+       PRE = Has preset equation
+       RES = Has reset equation
+       PUP = Power-Up initial state: R=Reset, S=Set
+        CE = Has clock enable equation
+        OE = Has output enable equation
+        FP = Fast path used
+       OBP = ORP bypass used
+
+
+<A name="Buried_Signal_List"></A><FONT COLOR=maroon><U><B><big>Buried_Signal_List</big></B></U></FONT>
+<BR>
+<B>        I         C      P R P       Node
+        N         L Mc   R E U C I F Fanout
+Mc GLB  P LL PTs  S Type E S P E R P       Signal
+</B>-----------------------------------------------------------------
+15   A  3  -   1  1 COM              2 AB  <A href=#39>N_37_i</A>
+ 5   A 11  1   9  2 DFF      R *     2 AB  <A href=#31>inst_s_io_cyc</A>
+11   A  7  -   2  1 DFF      R *     2 AB  <A href=#26>s4_io_reg_addr_0_</A>
+10   B  7  -   2  1 DFF      R *     1 A-  <A href=#27>s4_io_reg_addr_1_</A>
+12   A  7  -   2  1 DFF      R *     1 A-  <A href=#28>s4_io_reg_addr_2_</A>
+13   A  7  -   2  1 DFF      R *     1 A-  <A href=#29>s4_io_reg_addr_3_</A>
+ 2   B 10  2   4  1 DFF      R *     1 -B  <A href=#21>s5_duty_cycle_0_</A>
+ 5   B 10  2   4  1 DFF      R *     1 -B  <A href=#22>s5_duty_cycle_1_</A>
+ 6   A 10  2   5  1 DFF      R *     2 AB  <A href=#23>s5_duty_cycle_2_</A>
+ 6   B 10  2   4  1 DFF      R *     1 -B  <A href=#24>s5_duty_cycle_3_</A>
+ 8   B 10  2   4  1 DFF      R *     1 -B  <A href=#25>s5_duty_cycle_4_</A>
+15   B  1  1   1  1 DFF      R       1 -B  <A href=#32>s5_pwm_counter_0_</A>
+14   B  2  1   2  1 DFF      R       1 -B  <A href=#33>s5_pwm_counter_1_</A>
+12   B  3  1   3  1 DFF      R       1 -B  <A href=#34>s5_pwm_counter_2_</A>
+11   B  4  1   4  1 DFF      R       1 -B  <A href=#35>s5_pwm_counter_3_</A>
+13   B  5  1   2  1 DFF      R       1 -B  <A href=#36>s5_pwm_counter_4_</A>
+14   A  5  1   2  1 DFF      R *     2 AB  <A href=#30>s_fsm_counter_0_</A>
+10   A  6  1   3  1 DFF      R *     2 AB  <A href=#19>s_fsm_counter_1_</A>
+ 7   A  8  1   5  1 TFF      R *     2 AB  <A href=#20>s_fsm_counter_2_</A>
+ 8   A 10  1   4  1 DFF      R       2 AB  <A href=#37>s_lpc_fsm_state_0_</A>
+ 9   A  6  1   4  1 DFF      R       2 AB  <A href=#38>s_lpc_fsm_state_1_</A>
+--   B  6   1  0 PTOE             --     <A href=#43>pinout4_xbox_lad_0_.OE</A>
+-----------------------------------------------------------------
+
+&lt;Note&gt; CLS = Number of clusters used
+       INP = Number of input signals
+       PTs = Number of product terms
+        LL = Number of logic levels
+       PRE = Has preset equation
+       RES = Has reset equation
+       PUP = Power-Up initial state: R=Reset, S=Set
+        CE = Has clock enable equation
+        OE = Has output enable equation
+        IR = Input register
+        FP = Fast path used
+       OBP = ORP bypass used
+
+
+<A name="PostFit_Equations"></A><FONT COLOR=maroon><U><B><big>PostFit_Equations</big></B></U></FONT>
+<BR>
+<A name=39>N_37_i</A> = !<A href=#27>s4_io_reg_addr_1_.Q</A> & !<A href=#28>s4_io_reg_addr_2_.Q</A> & !<A href=#29>s4_io_reg_addr_3_.Q</A> ; (1 pterm, 3 signals)
+
+<A name=31>inst_s_io_cyc.D</A> = <A href=#6>pinout4_xbox_lad_3_.PIN</A> & <A href=#9>pinout4_xbox_lad_2_.PIN</A>
+       & <A href=#10>pinout4_xbox_lad_1_.PIN</A> & <A href=#11>pinout4_xbox_lad_0_.PIN</A>
+       & !<A href=#19>s_fsm_counter_1_.Q</A> & !<A href=#30>s_fsm_counter_0_.Q</A> & <A href=#31>inst_s_io_cyc.Q</A>
+       & <A href=#38>s_lpc_fsm_state_1_.Q</A>
+    # !pinout4_xbox_lad_3_.PIN & !pinout4_xbox_lad_2_.PIN
+       & !pinout4_xbox_lad_1_.PIN & !pinout4_xbox_lad_0_.PIN
+       & s_fsm_counter_1_.Q & inst_s_io_cyc.Q & s_lpc_fsm_state_1_.Q
+    # !pinout4_xbox_lad_3_.PIN & !pinout4_xbox_lad_2_.PIN
+       & pinout4_xbox_lad_1_.PIN & <A href=#37>s_lpc_fsm_state_0_.Q</A>
+       & !s_lpc_fsm_state_1_.Q
+    # !pinout4_xbox_lad_3_.PIN & pinout4_xbox_lad_2_.PIN
+       & pinout4_xbox_lad_1_.PIN & pinout4_xbox_lad_0_.PIN
+       & s_fsm_counter_0_.Q & inst_s_io_cyc.Q & s_lpc_fsm_state_1_.Q
+    # s_fsm_counter_1_.Q & s_fsm_counter_0_.Q & inst_s_io_cyc.Q
+       & s_lpc_fsm_state_1_.Q
+    # !<A href=#20>s_fsm_counter_2_.Q</A> & inst_s_io_cyc.Q & s_lpc_fsm_state_1_.Q
+    # pinout4_xbox_lad_2_.PIN & inst_s_io_cyc.Q & s_lpc_fsm_state_0_.Q
+    # inst_s_io_cyc.Q & s_lpc_fsm_state_0_.Q & s_lpc_fsm_state_1_.Q
+    # pinout4_xbox_lad_3_.PIN & inst_s_io_cyc.Q & s_lpc_fsm_state_0_.Q ; (9 pterms, 10 signals)
+inst_s_io_cyc.C = <A href=#8>pin_xbox_lclk</A> ; (1 pterm, 1 signal)
+inst_s_io_cyc.CE = <A href=#7>pin_xbox_n_lrst</A> ; (1 pterm, 1 signal)
+
+<A name=18>p4out_lcd_d4_d7_0_.D</A> = <A href=#6>pinout4_xbox_lad_3_.PIN</A> ; (1 pterm, 1 signal)
+p4out_lcd_d4_d7_0_.C = <A href=#8>pin_xbox_lclk</A> ; (1 pterm, 1 signal)
+p4out_lcd_d4_d7_0_.CE = !<A href=#19>s_fsm_counter_1_.Q</A> & !<A href=#20>s_fsm_counter_2_.Q</A>
+       & !<A href=#26>s4_io_reg_addr_0_.Q</A> & !<A href=#30>s_fsm_counter_0_.Q</A> & <A href=#31>inst_s_io_cyc.Q</A>
+       & <A href=#37>s_lpc_fsm_state_0_.Q</A> & <A href=#38>s_lpc_fsm_state_1_.Q</A> & <A href=#39>N_37_i</A> ; (1 pterm, 8 signals)
+
+<A name=17>p4out_lcd_d4_d7_1_.D</A> = <A href=#11>pinout4_xbox_lad_0_.PIN</A> ; (1 pterm, 1 signal)
+p4out_lcd_d4_d7_1_.C = <A href=#8>pin_xbox_lclk</A> ; (1 pterm, 1 signal)
+p4out_lcd_d4_d7_1_.CE = !<A href=#19>s_fsm_counter_1_.Q</A> & !<A href=#20>s_fsm_counter_2_.Q</A>
+       & !<A href=#26>s4_io_reg_addr_0_.Q</A> & <A href=#30>s_fsm_counter_0_.Q</A> & <A href=#31>inst_s_io_cyc.Q</A>
+       & <A href=#37>s_lpc_fsm_state_0_.Q</A> & <A href=#38>s_lpc_fsm_state_1_.Q</A> & <A href=#39>N_37_i</A> ; (1 pterm, 8 signals)
+
+<A name=16>p4out_lcd_d4_d7_2_.D</A> = <A href=#10>pinout4_xbox_lad_1_.PIN</A> ; (1 pterm, 1 signal)
+p4out_lcd_d4_d7_2_.C = <A href=#8>pin_xbox_lclk</A> ; (1 pterm, 1 signal)
+p4out_lcd_d4_d7_2_.CE = !<A href=#19>s_fsm_counter_1_.Q</A> & !<A href=#20>s_fsm_counter_2_.Q</A>
+       & !<A href=#26>s4_io_reg_addr_0_.Q</A> & <A href=#30>s_fsm_counter_0_.Q</A> & <A href=#31>inst_s_io_cyc.Q</A>
+       & <A href=#37>s_lpc_fsm_state_0_.Q</A> & <A href=#38>s_lpc_fsm_state_1_.Q</A> & <A href=#39>N_37_i</A> ; (1 pterm, 8 signals)
+
+<A name=12>p4out_lcd_d4_d7_3_.D</A> = <A href=#9>pinout4_xbox_lad_2_.PIN</A> ; (1 pterm, 1 signal)
+p4out_lcd_d4_d7_3_.C = <A href=#8>pin_xbox_lclk</A> ; (1 pterm, 1 signal)
+p4out_lcd_d4_d7_3_.CE = !<A href=#19>s_fsm_counter_1_.Q</A> & !<A href=#20>s_fsm_counter_2_.Q</A>
+       & !<A href=#26>s4_io_reg_addr_0_.Q</A> & <A href=#30>s_fsm_counter_0_.Q</A> & <A href=#31>inst_s_io_cyc.Q</A>
+       & <A href=#37>s_lpc_fsm_state_0_.Q</A> & <A href=#38>s_lpc_fsm_state_1_.Q</A> & <A href=#39>N_37_i</A> ; (1 pterm, 8 signals)
+
+<A name=11>pinout4_xbox_lad_0_</A> = 0 ; (0 pterm, 0 signal)
+pinout4_xbox_lad_0_.OE = !<A href=#19>s_fsm_counter_1_.Q</A> & <A href=#20>s_fsm_counter_2_.Q</A>
+       & !<A href=#30>s_fsm_counter_0_.Q</A> & <A href=#31>inst_s_io_cyc.Q</A> & <A href=#37>s_lpc_fsm_state_0_.Q</A>
+       & <A href=#38>s_lpc_fsm_state_1_.Q</A> ; (1 pterm, 6 signals)
+
+<A name=10>pinout4_xbox_lad_1_</A> = 0 ; (0 pterm, 0 signal)
+pinout4_xbox_lad_1_.OE = !<A href=#19>s_fsm_counter_1_.Q</A> & <A href=#20>s_fsm_counter_2_.Q</A>
+       & !<A href=#30>s_fsm_counter_0_.Q</A> & <A href=#31>inst_s_io_cyc.Q</A> & <A href=#37>s_lpc_fsm_state_0_.Q</A>
+       & <A href=#38>s_lpc_fsm_state_1_.Q</A> ; (1 pterm, 6 signals)
+
+<A name=9>pinout4_xbox_lad_2_</A> = 0 ; (0 pterm, 0 signal)
+pinout4_xbox_lad_2_.OE = !<A href=#19>s_fsm_counter_1_.Q</A> & <A href=#20>s_fsm_counter_2_.Q</A>
+       & !<A href=#30>s_fsm_counter_0_.Q</A> & <A href=#31>inst_s_io_cyc.Q</A> & <A href=#37>s_lpc_fsm_state_0_.Q</A>
+       & <A href=#38>s_lpc_fsm_state_1_.Q</A> ; (1 pterm, 6 signals)
+
+<A name=6>pinout4_xbox_lad_3_</A> = 0 ; (0 pterm, 0 signal)
+pinout4_xbox_lad_3_.OE = !<A href=#19>s_fsm_counter_1_.Q</A> & <A href=#20>s_fsm_counter_2_.Q</A>
+       & !<A href=#30>s_fsm_counter_0_.Q</A> & <A href=#31>inst_s_io_cyc.Q</A> & <A href=#37>s_lpc_fsm_state_0_.Q</A>
+       & <A href=#38>s_lpc_fsm_state_1_.Q</A> ; (1 pterm, 6 signals)
+
+<A name=15>pout_backlight.D</A> = <A href=#25>s5_duty_cycle_4_.Q</A> & <A href=#32>s5_pwm_counter_0_.Q</A>
+       & <A href=#33>s5_pwm_counter_1_.Q</A> & <A href=#34>s5_pwm_counter_2_.Q</A> & <A href=#35>s5_pwm_counter_3_.Q</A>
+       & <A href=#36>s5_pwm_counter_4_.Q</A>
+    # <A href=#24>s5_duty_cycle_3_.Q</A> & s5_pwm_counter_0_.Q & s5_pwm_counter_1_.Q
+       & s5_pwm_counter_2_.Q & s5_pwm_counter_3_.Q & s5_pwm_counter_4_.Q
+    # <A href=#23>s5_duty_cycle_2_.Q</A> & s5_pwm_counter_0_.Q & s5_pwm_counter_1_.Q
+       & s5_pwm_counter_2_.Q & s5_pwm_counter_3_.Q & s5_pwm_counter_4_.Q
+    # <A href=#22>s5_duty_cycle_1_.Q</A> & s5_pwm_counter_0_.Q & s5_pwm_counter_1_.Q
+       & s5_pwm_counter_2_.Q & s5_pwm_counter_3_.Q & s5_pwm_counter_4_.Q
+    # <A href=#21>s5_duty_cycle_0_.Q</A> & s5_pwm_counter_0_.Q & s5_pwm_counter_1_.Q
+       & s5_pwm_counter_2_.Q & s5_pwm_counter_3_.Q & s5_pwm_counter_4_.Q
+    # <A href=#15>pout_backlight.Q</A> & s5_duty_cycle_3_.Q & !s5_pwm_counter_3_.Q
+    # pout_backlight.Q & s5_duty_cycle_2_.Q & !s5_pwm_counter_2_.Q
+    # pout_backlight.Q & s5_duty_cycle_1_.Q & !s5_pwm_counter_1_.Q
+    # pout_backlight.Q & s5_duty_cycle_0_.Q & !s5_pwm_counter_0_.Q
+    # pout_backlight.Q & !s5_duty_cycle_3_.Q & s5_pwm_counter_3_.Q
+    # pout_backlight.Q & !s5_duty_cycle_2_.Q & s5_pwm_counter_2_.Q
+    # pout_backlight.Q & !s5_duty_cycle_1_.Q & s5_pwm_counter_1_.Q
+    # pout_backlight.Q & !s5_duty_cycle_0_.Q & s5_pwm_counter_0_.Q
+    # pout_backlight.Q & s5_duty_cycle_4_.Q & !s5_pwm_counter_4_.Q
+    # pout_backlight.Q & !s5_duty_cycle_4_.Q & s5_pwm_counter_4_.Q ; (15 pterms, 11 signals)
+pout_backlight.C = <A href=#8>pin_xbox_lclk</A> ; (1 pterm, 1 signal)
+
+<A name=14>pout_lcd_e.D</A> = <A href=#9>pinout4_xbox_lad_2_.PIN</A> ; (1 pterm, 1 signal)
+pout_lcd_e.C = <A href=#8>pin_xbox_lclk</A> ; (1 pterm, 1 signal)
+pout_lcd_e.CE = !<A href=#19>s_fsm_counter_1_.Q</A> & !<A href=#20>s_fsm_counter_2_.Q</A>
+       & !<A href=#26>s4_io_reg_addr_0_.Q</A> & !<A href=#30>s_fsm_counter_0_.Q</A> & <A href=#31>inst_s_io_cyc.Q</A>
+       & <A href=#37>s_lpc_fsm_state_0_.Q</A> & <A href=#38>s_lpc_fsm_state_1_.Q</A> & <A href=#39>N_37_i</A> ; (1 pterm, 8 signals)
+
+<A name=13>pout_lcd_rs.D</A> = <A href=#10>pinout4_xbox_lad_1_.PIN</A> ; (1 pterm, 1 signal)
+pout_lcd_rs.C = <A href=#8>pin_xbox_lclk</A> ; (1 pterm, 1 signal)
+pout_lcd_rs.CE = !<A href=#19>s_fsm_counter_1_.Q</A> & !<A href=#20>s_fsm_counter_2_.Q</A>
+       & !<A href=#26>s4_io_reg_addr_0_.Q</A> & !<A href=#30>s_fsm_counter_0_.Q</A> & <A href=#31>inst_s_io_cyc.Q</A>
+       & <A href=#37>s_lpc_fsm_state_0_.Q</A> & <A href=#38>s_lpc_fsm_state_1_.Q</A> & <A href=#39>N_37_i</A> ; (1 pterm, 8 signals)
+
+<A name=26>s4_io_reg_addr_0_.D</A> = <A href=#11>pinout4_xbox_lad_0_.PIN</A> ; (1 pterm, 1 signal)
+s4_io_reg_addr_0_.C = <A href=#8>pin_xbox_lclk</A> ; (1 pterm, 1 signal)
+s4_io_reg_addr_0_.CE = <A href=#7>pin_xbox_n_lrst</A> & <A href=#19>s_fsm_counter_1_.Q</A>
+       & <A href=#20>s_fsm_counter_2_.Q</A> & <A href=#30>s_fsm_counter_0_.Q</A> & !<A href=#37>s_lpc_fsm_state_0_.Q</A>
+       & <A href=#38>s_lpc_fsm_state_1_.Q</A> ; (1 pterm, 6 signals)
+
+<A name=27>s4_io_reg_addr_1_.D</A> = <A href=#10>pinout4_xbox_lad_1_.PIN</A> ; (1 pterm, 1 signal)
+s4_io_reg_addr_1_.C = <A href=#8>pin_xbox_lclk</A> ; (1 pterm, 1 signal)
+s4_io_reg_addr_1_.CE = <A href=#7>pin_xbox_n_lrst</A> & <A href=#19>s_fsm_counter_1_.Q</A>
+       & <A href=#20>s_fsm_counter_2_.Q</A> & <A href=#30>s_fsm_counter_0_.Q</A> & !<A href=#37>s_lpc_fsm_state_0_.Q</A>
+       & <A href=#38>s_lpc_fsm_state_1_.Q</A> ; (1 pterm, 6 signals)
+
+<A name=28>s4_io_reg_addr_2_.D</A> = <A href=#9>pinout4_xbox_lad_2_.PIN</A> ; (1 pterm, 1 signal)
+s4_io_reg_addr_2_.C = <A href=#8>pin_xbox_lclk</A> ; (1 pterm, 1 signal)
+s4_io_reg_addr_2_.CE = <A href=#7>pin_xbox_n_lrst</A> & <A href=#19>s_fsm_counter_1_.Q</A>
+       & <A href=#20>s_fsm_counter_2_.Q</A> & <A href=#30>s_fsm_counter_0_.Q</A> & !<A href=#37>s_lpc_fsm_state_0_.Q</A>
+       & <A href=#38>s_lpc_fsm_state_1_.Q</A> ; (1 pterm, 6 signals)
+
+<A name=29>s4_io_reg_addr_3_.D</A> = <A href=#6>pinout4_xbox_lad_3_.PIN</A> ; (1 pterm, 1 signal)
+s4_io_reg_addr_3_.C = <A href=#8>pin_xbox_lclk</A> ; (1 pterm, 1 signal)
+s4_io_reg_addr_3_.CE = <A href=#7>pin_xbox_n_lrst</A> & <A href=#19>s_fsm_counter_1_.Q</A>
+       & <A href=#20>s_fsm_counter_2_.Q</A> & <A href=#30>s_fsm_counter_0_.Q</A> & !<A href=#37>s_lpc_fsm_state_0_.Q</A>
+       & <A href=#38>s_lpc_fsm_state_1_.Q</A> ; (1 pterm, 6 signals)
+
+<A name=21>s5_duty_cycle_0_.D</A> = <A href=#9>pinout4_xbox_lad_2_.PIN</A> & <A href=#26>s4_io_reg_addr_0_.Q</A>
+       & !<A href=#30>s_fsm_counter_0_.Q</A> & <A href=#39>N_37_i</A>
+    # <A href=#21>s5_duty_cycle_0_.Q</A> & !N_37_i
+    # s5_duty_cycle_0_.Q & s_fsm_counter_0_.Q
+    # s5_duty_cycle_0_.Q & !s4_io_reg_addr_0_.Q ; (4 pterms, 5 signals)
+s5_duty_cycle_0_.C = <A href=#8>pin_xbox_lclk</A> ; (1 pterm, 1 signal)
+s5_duty_cycle_0_.CE = !<A href=#19>s_fsm_counter_1_.Q</A> & !<A href=#20>s_fsm_counter_2_.Q</A>
+       & <A href=#31>inst_s_io_cyc.Q</A> & <A href=#37>s_lpc_fsm_state_0_.Q</A> & <A href=#38>s_lpc_fsm_state_1_.Q</A> ; (1 pterm, 5 signals)
+
+<A name=22>s5_duty_cycle_1_.D</A> = <A href=#6>pinout4_xbox_lad_3_.PIN</A> & <A href=#26>s4_io_reg_addr_0_.Q</A>
+       & !<A href=#30>s_fsm_counter_0_.Q</A> & <A href=#39>N_37_i</A>
+    # <A href=#22>s5_duty_cycle_1_.Q</A> & !N_37_i
+    # s5_duty_cycle_1_.Q & s_fsm_counter_0_.Q
+    # s5_duty_cycle_1_.Q & !s4_io_reg_addr_0_.Q ; (4 pterms, 5 signals)
+s5_duty_cycle_1_.C = <A href=#8>pin_xbox_lclk</A> ; (1 pterm, 1 signal)
+s5_duty_cycle_1_.CE = !<A href=#19>s_fsm_counter_1_.Q</A> & !<A href=#20>s_fsm_counter_2_.Q</A>
+       & <A href=#31>inst_s_io_cyc.Q</A> & <A href=#37>s_lpc_fsm_state_0_.Q</A> & <A href=#38>s_lpc_fsm_state_1_.Q</A> ; (1 pterm, 5 signals)
+
+<A name=23>s5_duty_cycle_2_.D</A> = <A href=#11>pinout4_xbox_lad_0_.PIN</A> & <A href=#26>s4_io_reg_addr_0_.Q</A>
+       & <A href=#30>s_fsm_counter_0_.Q</A> & <A href=#39>N_37_i</A>
+    # <A href=#23>s5_duty_cycle_2_.Q</A> & !N_37_i
+    # s5_duty_cycle_2_.Q & !s_fsm_counter_0_.Q
+    # s5_duty_cycle_2_.Q & !s4_io_reg_addr_0_.Q ; (4 pterms, 5 signals)
+s5_duty_cycle_2_.C = <A href=#8>pin_xbox_lclk</A> ; (1 pterm, 1 signal)
+s5_duty_cycle_2_.CE = !<A href=#19>s_fsm_counter_1_.Q</A> & !<A href=#20>s_fsm_counter_2_.Q</A>
+       & <A href=#31>inst_s_io_cyc.Q</A> & <A href=#37>s_lpc_fsm_state_0_.Q</A> & <A href=#38>s_lpc_fsm_state_1_.Q</A> ; (1 pterm, 5 signals)
+
+<A name=24>s5_duty_cycle_3_.D</A> = <A href=#10>pinout4_xbox_lad_1_.PIN</A> & <A href=#26>s4_io_reg_addr_0_.Q</A>
+       & <A href=#30>s_fsm_counter_0_.Q</A> & <A href=#39>N_37_i</A>
+    # <A href=#24>s5_duty_cycle_3_.Q</A> & !N_37_i
+    # s5_duty_cycle_3_.Q & !s_fsm_counter_0_.Q
+    # s5_duty_cycle_3_.Q & !s4_io_reg_addr_0_.Q ; (4 pterms, 5 signals)
+s5_duty_cycle_3_.C = <A href=#8>pin_xbox_lclk</A> ; (1 pterm, 1 signal)
+s5_duty_cycle_3_.CE = !<A href=#19>s_fsm_counter_1_.Q</A> & !<A href=#20>s_fsm_counter_2_.Q</A>
+       & <A href=#31>inst_s_io_cyc.Q</A> & <A href=#37>s_lpc_fsm_state_0_.Q</A> & <A href=#38>s_lpc_fsm_state_1_.Q</A> ; (1 pterm, 5 signals)
+
+<A name=25>s5_duty_cycle_4_.D</A> = <A href=#9>pinout4_xbox_lad_2_.PIN</A> & <A href=#26>s4_io_reg_addr_0_.Q</A>
+       & <A href=#30>s_fsm_counter_0_.Q</A> & <A href=#39>N_37_i</A>
+    # <A href=#25>s5_duty_cycle_4_.Q</A> & !N_37_i
+    # s5_duty_cycle_4_.Q & !s_fsm_counter_0_.Q
+    # s5_duty_cycle_4_.Q & !s4_io_reg_addr_0_.Q ; (4 pterms, 5 signals)
+s5_duty_cycle_4_.C = <A href=#8>pin_xbox_lclk</A> ; (1 pterm, 1 signal)
+s5_duty_cycle_4_.CE = !<A href=#19>s_fsm_counter_1_.Q</A> & !<A href=#20>s_fsm_counter_2_.Q</A>
+       & <A href=#31>inst_s_io_cyc.Q</A> & <A href=#37>s_lpc_fsm_state_0_.Q</A> & <A href=#38>s_lpc_fsm_state_1_.Q</A> ; (1 pterm, 5 signals)
+
+<A name=32>s5_pwm_counter_0_.D</A> = !<A href=#32>s5_pwm_counter_0_.Q</A> ; (1 pterm, 1 signal)
+s5_pwm_counter_0_.C = <A href=#8>pin_xbox_lclk</A> ; (1 pterm, 1 signal)
+
+<A name=33>s5_pwm_counter_1_.D</A> = <A href=#32>s5_pwm_counter_0_.Q</A> & !<A href=#33>s5_pwm_counter_1_.Q</A>
+    # !s5_pwm_counter_0_.Q & s5_pwm_counter_1_.Q ; (2 pterms, 2 signals)
+s5_pwm_counter_1_.C = <A href=#8>pin_xbox_lclk</A> ; (1 pterm, 1 signal)
+
+<A name=34>s5_pwm_counter_2_.D</A> = <A href=#32>s5_pwm_counter_0_.Q</A> & <A href=#33>s5_pwm_counter_1_.Q</A>
+       & !<A href=#34>s5_pwm_counter_2_.Q</A>
+    # !s5_pwm_counter_1_.Q & s5_pwm_counter_2_.Q
+    # !s5_pwm_counter_0_.Q & s5_pwm_counter_2_.Q ; (3 pterms, 3 signals)
+s5_pwm_counter_2_.C = <A href=#8>pin_xbox_lclk</A> ; (1 pterm, 1 signal)
+
+<A name=35>s5_pwm_counter_3_.D</A> = <A href=#32>s5_pwm_counter_0_.Q</A> & <A href=#33>s5_pwm_counter_1_.Q</A>
+       & <A href=#34>s5_pwm_counter_2_.Q</A> & !<A href=#35>s5_pwm_counter_3_.Q</A>
+    # !s5_pwm_counter_2_.Q & s5_pwm_counter_3_.Q
+    # !s5_pwm_counter_1_.Q & s5_pwm_counter_3_.Q
+    # !s5_pwm_counter_0_.Q & s5_pwm_counter_3_.Q ; (4 pterms, 4 signals)
+s5_pwm_counter_3_.C = <A href=#8>pin_xbox_lclk</A> ; (1 pterm, 1 signal)
+
+<A name=36>s5_pwm_counter_4_.D.X1</A> = <A href=#32>s5_pwm_counter_0_.Q</A> & <A href=#33>s5_pwm_counter_1_.Q</A>
+       & <A href=#34>s5_pwm_counter_2_.Q</A> & <A href=#35>s5_pwm_counter_3_.Q</A> ; (1 pterm, 4 signals)
+s5_pwm_counter_4_.D.X2 = <A href=#36>s5_pwm_counter_4_.Q</A> ; (1 pterm, 1 signal)
+s5_pwm_counter_4_.C = <A href=#8>pin_xbox_lclk</A> ; (1 pterm, 1 signal)
+
+<A name=30>s_fsm_counter_0_.D</A> = !( !<A href=#6>pinout4_xbox_lad_3_.PIN</A> & <A href=#37>s_lpc_fsm_state_0_.Q</A>
+       & !<A href=#38>s_lpc_fsm_state_1_.Q</A>
+    # <A href=#30>s_fsm_counter_0_.Q</A> ) ; (2 pterms, 4 signals)
+s_fsm_counter_0_.C = <A href=#8>pin_xbox_lclk</A> ; (1 pterm, 1 signal)
+s_fsm_counter_0_.CE = <A href=#7>pin_xbox_n_lrst</A> ; (1 pterm, 1 signal)
+
+<A name=19>s_fsm_counter_1_.D</A> = !( !<A href=#6>pinout4_xbox_lad_3_.PIN</A> & <A href=#37>s_lpc_fsm_state_0_.Q</A>
+       & !<A href=#38>s_lpc_fsm_state_1_.Q</A>
+    # !<A href=#19>s_fsm_counter_1_.Q</A> & !<A href=#30>s_fsm_counter_0_.Q</A>
+    # s_fsm_counter_1_.Q & s_fsm_counter_0_.Q ) ; (3 pterms, 5 signals)
+s_fsm_counter_1_.C = <A href=#8>pin_xbox_lclk</A> ; (1 pterm, 1 signal)
+s_fsm_counter_1_.CE = <A href=#7>pin_xbox_n_lrst</A> ; (1 pterm, 1 signal)
+
+<A name=20>s_fsm_counter_2_.T</A> = !<A href=#6>pinout4_xbox_lad_3_.PIN</A> & !<A href=#9>pinout4_xbox_lad_2_.PIN</A>
+       & !<A href=#20>s_fsm_counter_2_.Q</A> & <A href=#37>s_lpc_fsm_state_0_.Q</A> & !<A href=#38>s_lpc_fsm_state_1_.Q</A>
+    # !pinout4_xbox_lad_3_.PIN & pinout4_xbox_lad_2_.PIN & s_fsm_counter_2_.Q
+       & s_lpc_fsm_state_0_.Q & !s_lpc_fsm_state_1_.Q
+    # <A href=#19>s_fsm_counter_1_.Q</A> & <A href=#30>s_fsm_counter_0_.Q</A> & s_lpc_fsm_state_1_.Q
+    # s_fsm_counter_1_.Q & s_fsm_counter_0_.Q & !s_lpc_fsm_state_0_.Q
+    # pinout4_xbox_lad_3_.PIN & s_fsm_counter_1_.Q & s_fsm_counter_0_.Q ; (5 pterms, 7 signals)
+s_fsm_counter_2_.C = <A href=#8>pin_xbox_lclk</A> ; (1 pterm, 1 signal)
+s_fsm_counter_2_.CE = <A href=#7>pin_xbox_n_lrst</A> ; (1 pterm, 1 signal)
+
+<A name=37>s_lpc_fsm_state_0_.D</A> = !<A href=#6>pinout4_xbox_lad_3_.PIN</A> & <A href=#7>pin_xbox_n_lrst</A>
+       & !<A href=#9>pinout4_xbox_lad_2_.PIN</A> & !<A href=#10>pinout4_xbox_lad_1_.PIN</A>
+       & !<A href=#11>pinout4_xbox_lad_0_.PIN</A> & !<A href=#37>s_lpc_fsm_state_0_.Q</A>
+       & !<A href=#38>s_lpc_fsm_state_1_.Q</A>
+    # pin_xbox_n_lrst & <A href=#19>s_fsm_counter_1_.Q</A> & <A href=#20>s_fsm_counter_2_.Q</A>
+       & <A href=#30>s_fsm_counter_0_.Q</A> & !s_lpc_fsm_state_0_.Q & s_lpc_fsm_state_1_.Q
+    # pin_xbox_n_lrst & !s_fsm_counter_2_.Q & s_lpc_fsm_state_0_.Q
+       & s_lpc_fsm_state_1_.Q
+    # pin_xbox_n_lrst & !s_fsm_counter_1_.Q & s_lpc_fsm_state_0_.Q
+       & s_lpc_fsm_state_1_.Q ; (4 pterms, 10 signals)
+s_lpc_fsm_state_0_.C = <A href=#8>pin_xbox_lclk</A> ; (1 pterm, 1 signal)
+
+<A name=38>s_lpc_fsm_state_1_.D</A> = !<A href=#6>pinout4_xbox_lad_3_.PIN</A> & <A href=#7>pin_xbox_n_lrst</A>
+       & <A href=#37>s_lpc_fsm_state_0_.Q</A> & !<A href=#38>s_lpc_fsm_state_1_.Q</A>
+    # pin_xbox_n_lrst & !s_lpc_fsm_state_0_.Q & s_lpc_fsm_state_1_.Q
+    # pin_xbox_n_lrst & !<A href=#20>s_fsm_counter_2_.Q</A> & s_lpc_fsm_state_1_.Q
+    # pin_xbox_n_lrst & !<A href=#19>s_fsm_counter_1_.Q</A> & s_lpc_fsm_state_1_.Q ; (4 pterms, 6 signals)
+s_lpc_fsm_state_1_.C = <A href=#8>pin_xbox_lclk</A> ; (1 pterm, 1 signal)
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+
+

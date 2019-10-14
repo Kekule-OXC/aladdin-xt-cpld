@@ -1,0 +1,263 @@
+#$ TOOL  ispLEVER Classic 2.0.00.17.20.15
+#$ DATE  Sun Aug 18 23:17:02 2019
+#$ MODULE  lcdcheapie_entity
+#$ PINS 13 pinout4_xbox_lad_3_ pin_xbox_n_lrst pin_xbox_lclk
+ pinout4_xbox_lad_2_ pinout4_xbox_lad_1_ pinout4_xbox_lad_0_ p4out_lcd_d4_d7_3_
+ pout_lcd_rs pout_lcd_e pout_backlight p4out_lcd_d4_d7_2_ p4out_lcd_d4_d7_1_
+ p4out_lcd_d4_d7_0_
+#$ NODES 21 s_fsm_counter_1_ s_fsm_counter_2_ s5_duty_cycle_0_ s5_duty_cycle_1_
+ s5_duty_cycle_2_ s5_duty_cycle_3_ s5_duty_cycle_4_ s4_io_reg_addr_0_
+ s4_io_reg_addr_1_ s4_io_reg_addr_2_ s4_io_reg_addr_3_ s_fsm_counter_0_
+ inst_s_io_cyc s5_pwm_counter_0_ s5_pwm_counter_1_ s5_pwm_counter_2_
+ s5_pwm_counter_3_ s5_pwm_counter_4_ s_lpc_fsm_state_0_ s_lpc_fsm_state_1_ N_37_i
+.model lcdcheapie_entity 
+.inputs pin_xbox_n_lrst.BLIF pin_xbox_lclk.BLIF pout_backlight.Q \
+ s_fsm_counter_1_.Q s_fsm_counter_2_.Q s5_duty_cycle_0_.Q s5_duty_cycle_1_.Q \
+ s5_duty_cycle_2_.Q s5_duty_cycle_3_.Q s5_duty_cycle_4_.Q s4_io_reg_addr_0_.Q \
+ s4_io_reg_addr_1_.Q s4_io_reg_addr_2_.Q s4_io_reg_addr_3_.Q s_fsm_counter_0_.Q \
+ inst_s_io_cyc.Q s5_pwm_counter_0_.Q s5_pwm_counter_1_.Q s5_pwm_counter_2_.Q \
+ s5_pwm_counter_3_.Q s5_pwm_counter_4_.Q s_lpc_fsm_state_0_.Q \
+ s_lpc_fsm_state_1_.Q N_37_i.BLIF pinout4_xbox_lad_0_.PIN pinout4_xbox_lad_1_.PIN \
+ pinout4_xbox_lad_2_.PIN pinout4_xbox_lad_3_.PIN
+.outputs pinout4_xbox_lad_3_ pinout4_xbox_lad_3_.OE pinout4_xbox_lad_2_ \
+ pinout4_xbox_lad_2_.OE pinout4_xbox_lad_1_ pinout4_xbox_lad_1_.OE \
+ pinout4_xbox_lad_0_ pinout4_xbox_lad_0_.OE p4out_lcd_d4_d7_3_.D \
+ p4out_lcd_d4_d7_3_.C p4out_lcd_d4_d7_3_.CE pout_lcd_rs.D pout_lcd_rs.C \
+ pout_lcd_rs.CE pout_lcd_e.D pout_lcd_e.C pout_lcd_e.CE pout_backlight.D \
+ pout_backlight.C p4out_lcd_d4_d7_2_.D p4out_lcd_d4_d7_2_.C p4out_lcd_d4_d7_2_.CE \
+ p4out_lcd_d4_d7_1_.D p4out_lcd_d4_d7_1_.C p4out_lcd_d4_d7_1_.CE \
+ p4out_lcd_d4_d7_0_.D p4out_lcd_d4_d7_0_.C p4out_lcd_d4_d7_0_.CE \
+ s_fsm_counter_1_.D- s_fsm_counter_1_.C s_fsm_counter_1_.CE s_fsm_counter_2_.T \
+ s_fsm_counter_2_.C s_fsm_counter_2_.CE s5_duty_cycle_0_.D s5_duty_cycle_0_.C \
+ s5_duty_cycle_0_.CE s5_duty_cycle_1_.D s5_duty_cycle_1_.C s5_duty_cycle_1_.CE \
+ s5_duty_cycle_2_.D s5_duty_cycle_2_.C s5_duty_cycle_2_.CE s5_duty_cycle_3_.D \
+ s5_duty_cycle_3_.C s5_duty_cycle_3_.CE s5_duty_cycle_4_.D s5_duty_cycle_4_.C \
+ s5_duty_cycle_4_.CE s4_io_reg_addr_0_.D s4_io_reg_addr_0_.C s4_io_reg_addr_0_.CE \
+ s4_io_reg_addr_1_.D s4_io_reg_addr_1_.C s4_io_reg_addr_1_.CE s4_io_reg_addr_2_.D \
+ s4_io_reg_addr_2_.C s4_io_reg_addr_2_.CE s4_io_reg_addr_3_.D s4_io_reg_addr_3_.C \
+ s4_io_reg_addr_3_.CE s_fsm_counter_0_.D- s_fsm_counter_0_.C s_fsm_counter_0_.CE \
+ inst_s_io_cyc.D inst_s_io_cyc.C inst_s_io_cyc.CE s5_pwm_counter_0_.D \
+ s5_pwm_counter_0_.C s5_pwm_counter_1_.D s5_pwm_counter_1_.C s5_pwm_counter_2_.D \
+ s5_pwm_counter_2_.C s5_pwm_counter_3_.D s5_pwm_counter_3_.C \
+ s5_pwm_counter_4_.D.X1 s5_pwm_counter_4_.D.X2 s5_pwm_counter_4_.C \
+ s_lpc_fsm_state_0_.D s_lpc_fsm_state_0_.C s_lpc_fsm_state_1_.D \
+ s_lpc_fsm_state_1_.C N_37_i
+.names pinout4_xbox_lad_3_
+.names s_fsm_counter_1_.Q s_fsm_counter_2_.Q s_fsm_counter_0_.Q inst_s_io_cyc.Q s_lpc_fsm_state_0_.Q s_lpc_fsm_state_1_.Q pinout4_xbox_lad_3_.OE
+010111 1
+.names pinout4_xbox_lad_2_
+.names s_fsm_counter_1_.Q s_fsm_counter_2_.Q s_fsm_counter_0_.Q inst_s_io_cyc.Q s_lpc_fsm_state_0_.Q s_lpc_fsm_state_1_.Q pinout4_xbox_lad_2_.OE
+010111 1
+.names pinout4_xbox_lad_1_
+.names s_fsm_counter_1_.Q s_fsm_counter_2_.Q s_fsm_counter_0_.Q inst_s_io_cyc.Q s_lpc_fsm_state_0_.Q s_lpc_fsm_state_1_.Q pinout4_xbox_lad_1_.OE
+010111 1
+.names pinout4_xbox_lad_0_
+.names s_fsm_counter_1_.Q s_fsm_counter_2_.Q s_fsm_counter_0_.Q inst_s_io_cyc.Q s_lpc_fsm_state_0_.Q s_lpc_fsm_state_1_.Q pinout4_xbox_lad_0_.OE
+010111 1
+.names pinout4_xbox_lad_2_.PIN p4out_lcd_d4_d7_3_.D
+1 1
+.names pin_xbox_lclk.BLIF p4out_lcd_d4_d7_3_.C
+1 1
+.names s_fsm_counter_1_.Q s_fsm_counter_2_.Q s4_io_reg_addr_0_.Q s_fsm_counter_0_.Q inst_s_io_cyc.Q s_lpc_fsm_state_0_.Q s_lpc_fsm_state_1_.Q N_37_i.BLIF p4out_lcd_d4_d7_3_.CE
+00011111 1
+.names pinout4_xbox_lad_1_.PIN pout_lcd_rs.D
+1 1
+.names pin_xbox_lclk.BLIF pout_lcd_rs.C
+1 1
+.names s_fsm_counter_1_.Q s_fsm_counter_2_.Q s4_io_reg_addr_0_.Q s_fsm_counter_0_.Q inst_s_io_cyc.Q s_lpc_fsm_state_0_.Q s_lpc_fsm_state_1_.Q N_37_i.BLIF pout_lcd_rs.CE
+00001111 1
+.names pinout4_xbox_lad_2_.PIN pout_lcd_e.D
+1 1
+.names pin_xbox_lclk.BLIF pout_lcd_e.C
+1 1
+.names s_fsm_counter_1_.Q s_fsm_counter_2_.Q s4_io_reg_addr_0_.Q s_fsm_counter_0_.Q inst_s_io_cyc.Q s_lpc_fsm_state_0_.Q s_lpc_fsm_state_1_.Q N_37_i.BLIF pout_lcd_e.CE
+00001111 1
+.names pout_backlight.Q s5_duty_cycle_0_.Q s5_duty_cycle_1_.Q s5_duty_cycle_2_.Q s5_duty_cycle_3_.Q s5_duty_cycle_4_.Q s5_pwm_counter_0_.Q s5_pwm_counter_1_.Q s5_pwm_counter_2_.Q s5_pwm_counter_3_.Q s5_pwm_counter_4_.Q pout_backlight.D
+-----111111 1
+----1-11111 1
+---1--11111 1
+--1---11111 1
+-1----11111 1
+1---1----0- 1
+1--1----0-- 1
+1-1----0--- 1
+11----0---- 1
+1---0----1- 1
+1--0----1-- 1
+1-0----1--- 1
+10----1---- 1
+1----1----0 1
+1----0----1 1
+.names pin_xbox_lclk.BLIF pout_backlight.C
+1 1
+.names pinout4_xbox_lad_1_.PIN p4out_lcd_d4_d7_2_.D
+1 1
+.names pin_xbox_lclk.BLIF p4out_lcd_d4_d7_2_.C
+1 1
+.names s_fsm_counter_1_.Q s_fsm_counter_2_.Q s4_io_reg_addr_0_.Q s_fsm_counter_0_.Q inst_s_io_cyc.Q s_lpc_fsm_state_0_.Q s_lpc_fsm_state_1_.Q N_37_i.BLIF p4out_lcd_d4_d7_2_.CE
+00011111 1
+.names pinout4_xbox_lad_0_.PIN p4out_lcd_d4_d7_1_.D
+1 1
+.names pin_xbox_lclk.BLIF p4out_lcd_d4_d7_1_.C
+1 1
+.names s_fsm_counter_1_.Q s_fsm_counter_2_.Q s4_io_reg_addr_0_.Q s_fsm_counter_0_.Q inst_s_io_cyc.Q s_lpc_fsm_state_0_.Q s_lpc_fsm_state_1_.Q N_37_i.BLIF p4out_lcd_d4_d7_1_.CE
+00011111 1
+.names pinout4_xbox_lad_3_.PIN p4out_lcd_d4_d7_0_.D
+1 1
+.names pin_xbox_lclk.BLIF p4out_lcd_d4_d7_0_.C
+1 1
+.names s_fsm_counter_1_.Q s_fsm_counter_2_.Q s4_io_reg_addr_0_.Q s_fsm_counter_0_.Q inst_s_io_cyc.Q s_lpc_fsm_state_0_.Q s_lpc_fsm_state_1_.Q N_37_i.BLIF p4out_lcd_d4_d7_0_.CE
+00001111 1
+.names s_fsm_counter_1_.Q s_fsm_counter_0_.Q s_lpc_fsm_state_0_.Q s_lpc_fsm_state_1_.Q pinout4_xbox_lad_3_.PIN s_fsm_counter_1_.D-
+--100 1
+00--- 1
+11--- 1
+.names pin_xbox_lclk.BLIF s_fsm_counter_1_.C
+1 1
+.names pin_xbox_n_lrst.BLIF s_fsm_counter_1_.CE
+1 1
+.names s_fsm_counter_1_.Q s_fsm_counter_2_.Q s_fsm_counter_0_.Q s_lpc_fsm_state_0_.Q s_lpc_fsm_state_1_.Q pinout4_xbox_lad_2_.PIN pinout4_xbox_lad_3_.PIN s_fsm_counter_2_.T
+-0-1000 1
+-1-1010 1
+1-1-1-- 1
+1-10--- 1
+1-1---1 1
+.names pin_xbox_lclk.BLIF s_fsm_counter_2_.C
+1 1
+.names pin_xbox_n_lrst.BLIF s_fsm_counter_2_.CE
+1 1
+.names s5_duty_cycle_0_.Q s4_io_reg_addr_0_.Q s_fsm_counter_0_.Q N_37_i.BLIF pinout4_xbox_lad_2_.PIN s5_duty_cycle_0_.D
+-1011 1
+1--0- 1
+1-1-- 1
+10--- 1
+.names pin_xbox_lclk.BLIF s5_duty_cycle_0_.C
+1 1
+.names s_fsm_counter_1_.Q s_fsm_counter_2_.Q inst_s_io_cyc.Q s_lpc_fsm_state_0_.Q s_lpc_fsm_state_1_.Q s5_duty_cycle_0_.CE
+00111 1
+.names s5_duty_cycle_1_.Q s4_io_reg_addr_0_.Q s_fsm_counter_0_.Q N_37_i.BLIF pinout4_xbox_lad_3_.PIN s5_duty_cycle_1_.D
+-1011 1
+1--0- 1
+1-1-- 1
+10--- 1
+.names pin_xbox_lclk.BLIF s5_duty_cycle_1_.C
+1 1
+.names s_fsm_counter_1_.Q s_fsm_counter_2_.Q inst_s_io_cyc.Q s_lpc_fsm_state_0_.Q s_lpc_fsm_state_1_.Q s5_duty_cycle_1_.CE
+00111 1
+.names s5_duty_cycle_2_.Q s4_io_reg_addr_0_.Q s_fsm_counter_0_.Q N_37_i.BLIF pinout4_xbox_lad_0_.PIN s5_duty_cycle_2_.D
+-1111 1
+1--0- 1
+1-0-- 1
+10--- 1
+.names pin_xbox_lclk.BLIF s5_duty_cycle_2_.C
+1 1
+.names s_fsm_counter_1_.Q s_fsm_counter_2_.Q inst_s_io_cyc.Q s_lpc_fsm_state_0_.Q s_lpc_fsm_state_1_.Q s5_duty_cycle_2_.CE
+00111 1
+.names s5_duty_cycle_3_.Q s4_io_reg_addr_0_.Q s_fsm_counter_0_.Q N_37_i.BLIF pinout4_xbox_lad_1_.PIN s5_duty_cycle_3_.D
+-1111 1
+1--0- 1
+1-0-- 1
+10--- 1
+.names pin_xbox_lclk.BLIF s5_duty_cycle_3_.C
+1 1
+.names s_fsm_counter_1_.Q s_fsm_counter_2_.Q inst_s_io_cyc.Q s_lpc_fsm_state_0_.Q s_lpc_fsm_state_1_.Q s5_duty_cycle_3_.CE
+00111 1
+.names s5_duty_cycle_4_.Q s4_io_reg_addr_0_.Q s_fsm_counter_0_.Q N_37_i.BLIF pinout4_xbox_lad_2_.PIN s5_duty_cycle_4_.D
+-1111 1
+1--0- 1
+1-0-- 1
+10--- 1
+.names pin_xbox_lclk.BLIF s5_duty_cycle_4_.C
+1 1
+.names s_fsm_counter_1_.Q s_fsm_counter_2_.Q inst_s_io_cyc.Q s_lpc_fsm_state_0_.Q s_lpc_fsm_state_1_.Q s5_duty_cycle_4_.CE
+00111 1
+.names pinout4_xbox_lad_0_.PIN s4_io_reg_addr_0_.D
+1 1
+.names pin_xbox_lclk.BLIF s4_io_reg_addr_0_.C
+1 1
+.names pin_xbox_n_lrst.BLIF s_fsm_counter_1_.Q s_fsm_counter_2_.Q s_fsm_counter_0_.Q s_lpc_fsm_state_0_.Q s_lpc_fsm_state_1_.Q s4_io_reg_addr_0_.CE
+111101 1
+.names pinout4_xbox_lad_1_.PIN s4_io_reg_addr_1_.D
+1 1
+.names pin_xbox_lclk.BLIF s4_io_reg_addr_1_.C
+1 1
+.names pin_xbox_n_lrst.BLIF s_fsm_counter_1_.Q s_fsm_counter_2_.Q s_fsm_counter_0_.Q s_lpc_fsm_state_0_.Q s_lpc_fsm_state_1_.Q s4_io_reg_addr_1_.CE
+111101 1
+.names pinout4_xbox_lad_2_.PIN s4_io_reg_addr_2_.D
+1 1
+.names pin_xbox_lclk.BLIF s4_io_reg_addr_2_.C
+1 1
+.names pin_xbox_n_lrst.BLIF s_fsm_counter_1_.Q s_fsm_counter_2_.Q s_fsm_counter_0_.Q s_lpc_fsm_state_0_.Q s_lpc_fsm_state_1_.Q s4_io_reg_addr_2_.CE
+111101 1
+.names pinout4_xbox_lad_3_.PIN s4_io_reg_addr_3_.D
+1 1
+.names pin_xbox_lclk.BLIF s4_io_reg_addr_3_.C
+1 1
+.names pin_xbox_n_lrst.BLIF s_fsm_counter_1_.Q s_fsm_counter_2_.Q s_fsm_counter_0_.Q s_lpc_fsm_state_0_.Q s_lpc_fsm_state_1_.Q s4_io_reg_addr_3_.CE
+111101 1
+.names s_fsm_counter_0_.Q s_lpc_fsm_state_0_.Q s_lpc_fsm_state_1_.Q pinout4_xbox_lad_3_.PIN s_fsm_counter_0_.D-
+-100 1
+1--- 1
+.names pin_xbox_lclk.BLIF s_fsm_counter_0_.C
+1 1
+.names pin_xbox_n_lrst.BLIF s_fsm_counter_0_.CE
+1 1
+.names s_fsm_counter_1_.Q s_fsm_counter_2_.Q s_fsm_counter_0_.Q inst_s_io_cyc.Q s_lpc_fsm_state_0_.Q s_lpc_fsm_state_1_.Q pinout4_xbox_lad_0_.PIN pinout4_xbox_lad_1_.PIN pinout4_xbox_lad_2_.PIN pinout4_xbox_lad_3_.PIN inst_s_io_cyc.D
+0-01-11111 1
+1--1-10000 1
+----10-100 1
+--11-11110 1
+1-11-1---- 1
+-0-1-1---- 1
+---11---1- 1
+---111---- 1
+---11----1 1
+.names pin_xbox_lclk.BLIF inst_s_io_cyc.C
+1 1
+.names pin_xbox_n_lrst.BLIF inst_s_io_cyc.CE
+1 1
+.names s5_pwm_counter_0_.Q s5_pwm_counter_0_.D
+0 1
+.names pin_xbox_lclk.BLIF s5_pwm_counter_0_.C
+1 1
+.names s5_pwm_counter_0_.Q s5_pwm_counter_1_.Q s5_pwm_counter_1_.D
+10 1
+01 1
+.names pin_xbox_lclk.BLIF s5_pwm_counter_1_.C
+1 1
+.names s5_pwm_counter_0_.Q s5_pwm_counter_1_.Q s5_pwm_counter_2_.Q s5_pwm_counter_2_.D
+110 1
+-01 1
+0-1 1
+.names pin_xbox_lclk.BLIF s5_pwm_counter_2_.C
+1 1
+.names s5_pwm_counter_0_.Q s5_pwm_counter_1_.Q s5_pwm_counter_2_.Q s5_pwm_counter_3_.Q s5_pwm_counter_3_.D
+1110 1
+--01 1
+-0-1 1
+0--1 1
+.names pin_xbox_lclk.BLIF s5_pwm_counter_3_.C
+1 1
+.names s5_pwm_counter_0_.Q s5_pwm_counter_1_.Q s5_pwm_counter_2_.Q s5_pwm_counter_3_.Q s5_pwm_counter_4_.Q s5_pwm_counter_4_.D.X1
+1111- 1
+.names s5_pwm_counter_0_.Q s5_pwm_counter_1_.Q s5_pwm_counter_2_.Q s5_pwm_counter_3_.Q s5_pwm_counter_4_.Q s5_pwm_counter_4_.D.X2
+----1 1
+.names pin_xbox_lclk.BLIF s5_pwm_counter_4_.C
+1 1
+.names pin_xbox_n_lrst.BLIF s_fsm_counter_1_.Q s_fsm_counter_2_.Q s_fsm_counter_0_.Q s_lpc_fsm_state_0_.Q s_lpc_fsm_state_1_.Q pinout4_xbox_lad_0_.PIN pinout4_xbox_lad_1_.PIN pinout4_xbox_lad_2_.PIN pinout4_xbox_lad_3_.PIN s_lpc_fsm_state_0_.D
+1---000000 1
+111101---- 1
+1-0-11---- 1
+10--11---- 1
+.names pin_xbox_lclk.BLIF s_lpc_fsm_state_0_.C
+1 1
+.names pin_xbox_n_lrst.BLIF s_fsm_counter_1_.Q s_fsm_counter_2_.Q s_lpc_fsm_state_0_.Q s_lpc_fsm_state_1_.Q pinout4_xbox_lad_3_.PIN s_lpc_fsm_state_1_.D
+1--100 1
+1--01- 1
+1-0-1- 1
+10--1- 1
+.names pin_xbox_lclk.BLIF s_lpc_fsm_state_1_.C
+1 1
+.names s4_io_reg_addr_1_.Q s4_io_reg_addr_2_.Q s4_io_reg_addr_3_.Q N_37_i
+000 1
+.end

@@ -1,0 +1,160 @@
+
+[Device]
+Family = lc4k;
+PartNumber = LC4032V-10T44I;
+Package = 44TQFP;
+PartType = LC4032V;
+Speed = -10;
+Operating_condition = IND;
+Status = Production;
+EN_PinGLB = No;
+EN_PinMacrocell = No;
+Default_Device_IO_Types = LVCMOS33, -;
+
+[Revision]
+Parent = lc4k32v.lci;
+DATE = 07/12/2019;
+TIME = 19:28:05;
+Source_Format = Pure_VHDL;
+Synthesis = Synplify;
+
+[Ignore Assignments]
+
+[Clear Assignments]
+
+[Backannotate Assignments]
+
+[Global Constraints]
+Nodes_collapsing_mode = Fmax;
+Logic_optimization_effort = 7;
+Svf_verify_only = Off;
+Svf_erase_program_verify = On;
+Fitter_effort_level = High;
+Balanced_partitioning = No;
+Clock_enable_optimization = Auto;
+
+[Location Assignments]
+layer = OFF;
+pin_xbox_n_lrst = Pin, 2, -, A, 5;
+pin_pad_h0 = Pin, 9, -, A, 10;
+pin_xbox_lclk = Pin, 39, -, -, -;
+pin_pad_bt = Pin, 26, -, B, 7;
+pinout_pad_d0 = Pin, 31, -, B, 10;
+pinout_pad_l1 = Pin, 29, -, B, 8;
+pout_flash_lframe = Pin, 40, -, A, 0;
+pinout_pad_x = Pin, 30, -, B, 9;
+pinout4_flash_lad_0_ = Pin, 44, -, A, 4;
+pinout4_flash_lad_1_ = Pin, 43, -, A, 3;
+pinout4_flash_lad_2_ = Pin, 42, -, A, 2;
+pinout4_flash_lad_3_ = Pin, 41, -, A, 1;
+pinout4_xbox_lad_0_ = Pin, 38, -, B, 15;
+pinout4_xbox_lad_1_ = Pin, 37, -, B, 14;
+pinout4_xbox_lad_2_ = Pin, 22, -, B, 4;
+pinout4_xbox_lad_3_ = Pin, 21, -, B, 3;
+
+[Group Assignments]
+layer = OFF;
+
+[Resource Reservations]
+layer = OFF;
+
+[Fitter Report Format]
+
+[Power]
+
+[Source Constraint Option]
+
+[Fast Bypass]
+
+[OSM Bypass]
+
+[Input Registers]
+NONE = pin_xbox_lclk, pin_xbox_n_lrst, pin_pad_h0, pin_pad_bt;
+
+[Netlist/Delay Format]
+NetList = VHDL;
+
+[IO Types]
+layer = OFF;
+
+[Pullup]
+
+[Slewrate]
+
+[Region]
+
+[Timing Constraints]
+layer = OFF;
+fMAX_0 = 30.3030;
+fMAX_1 = 30.3030, pin_xbox_lclk, pin_xbox_lclk;
+
+[HSI Attributes]
+
+[Input Delay]
+
+[opt global constraints list]
+
+[Explorer User Settings]
+
+[Pin attributes list]
+
+[global constraints list]
+
+[Global Constraints Process Update]
+
+[pin lock limitation]
+
+[LOCATION ASSIGNMENTS LIST]
+
+[RESOURCE RESERVATIONS LIST]
+
+[individual constraints list]
+
+[Attributes list setting]
+
+[Timing Analyzer]
+
+[PLL Assignments]
+
+[Dual Function Macrocell]
+
+[Explorer Results]
+
+[VHDL synplify constraints]
+
+[VHDL spectrum constraints]
+
+[verilog synplify constraints]
+
+[verilog spectrum constraints]
+
+[VHDL synplify constraints list]
+
+[VHDL spectrum constraints list]
+
+[verilog synplify constraints list]
+
+[verilog spectrum constraints list]
+
+[ORP Bypass]
+
+[Register Powerup]
+RESET = pinout_pad_d0, pinout_pad_l1, pout_flash_lframe, pinout_pad_x, pinout4_flash_lad_0_, 
+	pinout4_flash_lad_1_, pinout4_flash_lad_2_, pinout4_flash_lad_3_, pinout4_xbox_lad_0_, 
+	pinout4_xbox_lad_1_, pinout4_xbox_lad_2_, pinout4_xbox_lad_3_;
+Default = Reset;
+
+[Constraint Version]
+version = 1.0;
+
+[ORP ASSIGNMENTS]
+layer = OFF;
+
+[Node attribute]
+layer = OFF;
+
+[SYMBOL/MODULE attribute]
+layer = OFF;
+
+[Nodal Constraints]
+layer = OFF;

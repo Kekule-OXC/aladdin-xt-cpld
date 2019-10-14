@@ -1,0 +1,5 @@
+10
+~E 1 "./../../1mb_lpcmod.vhd" 31 entity_lpcmod
+~A 1 "./../../1mb_lpcmod.vhd" 48 arch_lpcmod
+~E 1 "./../../lpcmod_tb_id.vhd" 8 LPCMod_tb
+~A 1 "./../../lpcmod_tb_id.vhd" 11 behavior

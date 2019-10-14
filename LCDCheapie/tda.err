@@ -1,0 +1,15 @@
+TDA  - Timing Driven Analyze 
+Ver. 1.0, supported by Lattice Semiconductor
+ispLEVER Classic 2.0 Copyright 1992-2015 Lattice Semiconductor. All Rights Reserved.
+......
+
+Summary for Timing Constraints:
+
+Goal: Clock Frequency of 33.00MHz (30.30ns) is met.
+      Worst case path (on clock domain "pin_xbox_lclk"):
+      From  : s4_io_reg_addr_1_.C
+      to    : p4out_lcd_d4_d7_0_.CE
+      Actual: 11.05ns (90.50MHz)
+      Slack : 19.25ns
+
+  Total constraints: 1, passed: 1, not passed: 0

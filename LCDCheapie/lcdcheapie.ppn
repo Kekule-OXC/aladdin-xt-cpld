@@ -1,0 +1,27 @@
+//
+// Software Version :  ispLEVER Classic 2.0.00.17.20.15  
+// Project Name	    :  lcdcheapie
+// Targeted Device  :  LC4032V-75T44C
+// Date             :  Sun Aug 18 23:17:06 2019
+//
+          pin_xbox_n_lrst          IN            2
+                   GNDIO0          SYS           5
+                   VCCIO0          SYS           6
+              pout_lcd_rs          OUT           9
+                      VCC          SYS           11
+                      GND          SYS           12
+      pinout4_xbox_lad_3_          BIDI          21
+      pinout4_xbox_lad_2_          BIDI          22
+           pout_backlight          OUT           26
+                   GNDIO1          SYS           27
+                   VCCIO1          SYS           28
+               pout_lcd_e          OUT           29
+                      VCC          SYS           33
+                      GND          SYS           34
+      pinout4_xbox_lad_1_          BIDI          37
+      pinout4_xbox_lad_0_          BIDI          38
+            pin_xbox_lclk          IN            39
+       p4out_lcd_d4_d7_3_          OUT           41
+       p4out_lcd_d4_d7_2_          OUT           42
+       p4out_lcd_d4_d7_1_          OUT           43
+       p4out_lcd_d4_d7_0_          OUT           44

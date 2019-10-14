@@ -1,0 +1,5 @@
+10
+~E 1 "./../../lcd_cheapie.vhd" 30 lcdcheapie_entity
+~A 1 "./../../lcd_cheapie.vhd" 47 arch_lcdcheapie
+~E 1 "./../../testbench.vhd" 8 LPCMod_tb
+~A 1 "./../../testbench.vhd" 11 behavior

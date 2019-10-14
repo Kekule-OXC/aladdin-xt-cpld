@@ -1,0 +1,158 @@
+
+[Device]
+Family = lc4k;
+PartNumber = LC4032V-75T44C;
+Package = 44TQFP;
+PartType = LC4032V;
+Speed = -7.5;
+Operating_condition = COM;
+Status = Production;
+EN_PinGLB = No;
+EN_PinMacrocell = No;
+
+[Revision]
+Parent = lc4k32v.lci;
+DATE = 08/13/2019;
+TIME = 21:29:59;
+Source_Format = Pure_VHDL;
+Synthesis = Synplify;
+
+[Ignore Assignments]
+
+[Clear Assignments]
+
+[Backannotate Assignments]
+
+[Global Constraints]
+Fmax_logic_level = 7;
+
+[Location Assignments]
+layer = OFF;
+pin_xbox_n_lrst = Pin, 2, -, A, 5;
+pin_xbox_lclk = Pin, 39, -, -, -;
+pinout4_xbox_lad_0_ = Pin, 38, -, B, 15;
+pinout4_xbox_lad_1_ = Pin, 37, -, B, 14;
+pinout4_xbox_lad_2_ = Pin, 22, -, B, 4;
+pinout4_xbox_lad_3_ = Pin, 21, -, B, 3;
+pout_backlight = Pin, 26, -, B, 7;
+p4out_lcd_d4_d7_0_ = Pin, 44, -, A, 4;
+p4out_lcd_d4_d7_1_ = Pin, 43, -, A, 3;
+p4out_lcd_d4_d7_2_ = Pin, 42, -, A, 2;
+p4out_lcd_d4_d7_3_ = Pin, 41, -, A, 1;
+pout_lcd_rs = Pin, 9, -, A, 10;
+pout_lcd_e = Pin, 29, -, B, 8;
+
+[Group Assignments]
+layer = OFF;
+
+[Resource Reservations]
+layer = OFF;
+
+[Fitter Report Format]
+
+[Power]
+
+[Source Constraint Option]
+
+[Fast Bypass]
+
+[OSM Bypass]
+
+[Input Registers]
+NONE = pin_xbox_n_lrst;
+
+[Netlist/Delay Format]
+NetList = VHDL;
+
+[IO Types]
+layer = OFF;
+pin_xbox_n_lrst = LVCMOS33, PIN, 0, -;
+pin_xbox_lclk = LVCMOS33, PIN, 0, -;
+pinout4_xbox_lad_0_ = LVCMOS33, PIN, 1, -;
+pinout4_xbox_lad_1_ = LVCMOS33, PIN, 1, -;
+pinout4_xbox_lad_2_ = LVCMOS33, PIN, 1, -;
+pinout4_xbox_lad_3_ = LVCMOS33, PIN, 1, -;
+pout_backlight = LVCMOS33, PIN, 1, -;
+p4out_lcd_d4_d7_0_ = LVCMOS33, PIN, 0, -;
+p4out_lcd_d4_d7_1_ = LVCMOS33, PIN, 0, -;
+p4out_lcd_d4_d7_2_ = LVCMOS33, PIN, 0, -;
+p4out_lcd_d4_d7_3_ = LVCMOS33, PIN, 0, -;
+pout_lcd_e = LVCMOS33, PIN, 1, -;
+pout_lcd_rs = LVCMOS33, PIN, 0, -;
+
+[Pullup]
+
+[Slewrate]
+
+[Region]
+
+[Timing Constraints]
+layer = OFF;
+fMAX_0 = 30.3030;
+
+[HSI Attributes]
+
+[Input Delay]
+
+[opt global constraints list]
+
+[Explorer User Settings]
+
+[Pin attributes list]
+
+[global constraints list]
+
+[Global Constraints Process Update]
+
+[pin lock limitation]
+
+[LOCATION ASSIGNMENTS LIST]
+
+[RESOURCE RESERVATIONS LIST]
+
+[individual constraints list]
+
+[Attributes list setting]
+
+[Timing Analyzer]
+
+[PLL Assignments]
+
+[Dual Function Macrocell]
+
+[Explorer Results]
+
+[VHDL synplify constraints]
+
+[VHDL spectrum constraints]
+
+[verilog synplify constraints]
+
+[verilog spectrum constraints]
+
+[VHDL synplify constraints list]
+
+[VHDL spectrum constraints list]
+
+[verilog synplify constraints list]
+
+[verilog spectrum constraints list]
+
+[ORP Bypass]
+
+[Register Powerup]
+
+[Constraint Version]
+version = 1.0;
+
+[ORP ASSIGNMENTS]
+layer = OFF;
+
+[Node attribute]
+layer = OFF;
+
+[SYMBOL/MODULE attribute]
+layer = OFF;
+
+[Nodal Constraints]
+layer = OFF;

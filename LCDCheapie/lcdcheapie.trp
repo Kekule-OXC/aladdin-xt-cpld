@@ -1,0 +1,57 @@
+
+Timing Report
+
+//  Project = lcdcheapie
+//  Family  = lc4k
+//  Device  = LC4032V
+//  Speed   = -7.5
+//  Voltage = 3.3
+//  Operating Condition = COM
+//  Data sheet version  = 3.2
+
+//  Pass Bidirection = OFF
+//  Pass S/R = OFF
+//  Pass Latch = OFF
+//  Pass Clock = OFF
+//  Maximum Paths = 20
+//  T_SU Endpoints D/T inputs = ON
+//  T_SU Endpoints CE inputs = OFF
+//  T_SU Endpoints S/R inputs = OFF
+//  T_SU Endpoints RAM gated = ON
+//  Fmax of CE = ON
+//  Fmax of RAM = ON
+
+//  Location(From => To)
+//    Pin number: numeric number preceded by "p", BGA number as is
+//    Macrocell number: Segment#,GLB#,Macrocell#
+//                      Segment#: starts from 0 (if applicable)
+//                      GLB#: starts from A..Z, AA..ZZ
+//                      Macrocell#: starts from 0 to 31
+Summary for Timing Constraints:
+  -- fMAX_0 =  11.05 ns ( 30.30) :  passed with slack =  19.25 (90.50 MHz)
+  Total constraints: 1, passed: 1, not passed: 0
+
+
+fMAX_0 =  30.30 , -, -;
+  Slack  Req.    Delay         Level   Location(From => To)    Source                        Destination                   Destination_Clock
+  =====  ====    =====         =====   ====================    ======                        ===========                   =================
+ 19.25  30.30    11.05           2      B10      =>  A4        s4_io_reg_addr_1_.C           p4out_lcd_d4_d7_0_.CE         pin_xbox_lclk
+ 19.25  30.30    11.05           2      B10      =>  A3        s4_io_reg_addr_1_.C           p4out_lcd_d4_d7_1_.CE         pin_xbox_lclk
+ 19.25  30.30    11.05           2      B10      =>  A2        s4_io_reg_addr_1_.C           p4out_lcd_d4_d7_2_.CE         pin_xbox_lclk
+ 19.25  30.30    11.05           2      B10      =>  A1        s4_io_reg_addr_1_.C           p4out_lcd_d4_d7_3_.CE         pin_xbox_lclk
+ 19.25  30.30    11.05           2      B10      =>  B9        s4_io_reg_addr_1_.C           pout_lcd_e.CE                 pin_xbox_lclk
+ 19.25  30.30    11.05           2      B10      =>  A0        s4_io_reg_addr_1_.C           pout_lcd_rs.CE                pin_xbox_lclk
+ 19.35  30.30    10.95           2      B10      =>  B2        s4_io_reg_addr_1_.C           s5_duty_cycle_0_.D            pin_xbox_lclk
+ 19.35  30.30    10.95           2      B10      =>  B5        s4_io_reg_addr_1_.C           s5_duty_cycle_1_.D            pin_xbox_lclk
+ 19.35  30.30    10.95           2      B10      =>  A6        s4_io_reg_addr_1_.C           s5_duty_cycle_2_.D            pin_xbox_lclk
+ 19.35  30.30    10.95           2      B10      =>  B6        s4_io_reg_addr_1_.C           s5_duty_cycle_3_.D            pin_xbox_lclk
+ 19.35  30.30    10.95           2      B10      =>  B8        s4_io_reg_addr_1_.C           s5_duty_cycle_4_.D            pin_xbox_lclk
+ 23.95  30.30     6.35           1      A10      =>  B2        s_fsm_counter_1_.C            s5_duty_cycle_0_.CE           pin_xbox_lclk
+ 23.95  30.30     6.35           1      A10      =>  B5        s_fsm_counter_1_.C            s5_duty_cycle_1_.CE           pin_xbox_lclk
+ 23.95  30.30     6.35           1      A10      =>  B6        s_fsm_counter_1_.C            s5_duty_cycle_3_.CE           pin_xbox_lclk
+ 23.95  30.30     6.35           1      A10      =>  B8        s_fsm_counter_1_.C            s5_duty_cycle_4_.CE           pin_xbox_lclk
+ 24.10  30.30     6.20           1      A10      =>  A7        s_fsm_counter_1_.C            s_fsm_counter_2_.T            pin_xbox_lclk
+ 24.20  30.30     6.10           1      A10      =>  A11       s_fsm_counter_1_.C            s4_io_reg_addr_0_.CE          pin_xbox_lclk
+ 24.20  30.30     6.10           1      A10      =>  B10       s_fsm_counter_1_.C            s4_io_reg_addr_1_.CE          pin_xbox_lclk
+ 24.20  30.30     6.10           1      A10      =>  A12       s_fsm_counter_1_.C            s4_io_reg_addr_2_.CE          pin_xbox_lclk
+ 24.20  30.30     6.10           1      A10      =>  A13       s_fsm_counter_1_.C            s4_io_reg_addr_3_.CE          pin_xbox_lclk

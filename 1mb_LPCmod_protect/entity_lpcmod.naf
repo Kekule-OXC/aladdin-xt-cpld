@@ -1,0 +1,16 @@
+pin_xbox_n_lrst  i
+pin_xbox_lclk  i
+pin_pad_bt  i
+pin_pad_h0  i
+pout_flash_lframe  o
+pinout4_xbox_lad[3]  b
+pinout4_xbox_lad[2]  b
+pinout4_xbox_lad[1]  b
+pinout4_xbox_lad[0]  b
+pinout4_flash_lad[3]  b
+pinout4_flash_lad[2]  b
+pinout4_flash_lad[1]  b
+pinout4_flash_lad[0]  b
+pinout_pad_d0  b
+pinout_pad_x  b
+pinout_pad_l1  b

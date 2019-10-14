@@ -1,0 +1,610 @@
+#$ DATE Sun Aug 18 23:17:02 2019
+#$ TOOL EDIF2BLIF version IspLever 1.0 
+#$ MODULE lcdcheapie_entity
+#$ PINS 13 pinout4_xbox_lad_3_ p4out_lcd_d4_d7_3_ pin_xbox_n_lrst pin_xbox_lclk pout_lcd_rs pout_lcd_e pout_backlight pinout4_xbox_lad_2_ pinout4_xbox_lad_1_ pinout4_xbox_lad_0_ p4out_lcd_d4_d7_2_ p4out_lcd_d4_d7_1_ p4out_lcd_d4_d7_0_
+#$ NODES 198 s3_lcd_data_low_0_reg s3_lcd_data_low_1_reg s3_lcd_data_low_2_reg s3_lcd_data_high_0_reg s3_lcd_data_high_1_reg s3_lcd_data_high_2_reg inst_s_backlightreg un22_s5_duty_cycle G_77 G_79 \
+#  s_fsm_counter_1_ s_fsm_counter_2_ s5_duty_cycle_0_ s5_duty_cycle_1_ s5_duty_cycle_2_ s5_duty_cycle_3_ s5_duty_cycle_4_ s4_io_reg_addr_0_ s4_io_reg_addr_1_ s4_io_reg_addr_2_ \
+#  s4_io_reg_addr_3_ s_fsm_counter_0_ gnd_n_n inst_s_io_cyc s5_pwm_counter_0_ s5_pwm_counter_1_ s5_pwm_counter_2_ s5_pwm_counter_3_ s5_pwm_counter_4_ process_lpc_direction_un26_s_lpc_fsm_state_n \
+#  s3_lcd_data_high_1_sqmuxa s3_lcd_data_low_0_sqmuxa s_lpc_fsm_state_0_ s_lpc_fsm_state_1_ s_lpc_fsm_state_6_sqmuxa s4_io_reg_addr_1_sqmuxa s_lpc_fsm_state_ns_0__n N_88 N_170 N_44 \
+#  N_45 N_47 N_50 N_59 N_66 N_67 N_68 N_69 N_70 N_71 \
+#  N_72 N_73 N_74 N_75 N_76 N_77 N_89 N_90 N_91 N_175 \
+#  N_176 G_90_0_x2 G_89_0_x2 G_75_0_x2 G_88_0_x2 G_73_0_x2 G_86_0_x2 G_87_0_x2 N_65 N_15 \
+#  un8_s5_pwm_counter_1 N_172 N_171 N_86 N_87 N_84 N_85 N_82 N_83 N_80 \
+#  N_81 N_78 N_79 N_143 N_141 N_22 un22_s5_duty_cycle_i s4_io_reg_addr_i_3__n s4_io_reg_addr_i_2__n s5_duty_cycle_i_4__n \
+#  pinout4_xbox_lad_i_2__n s5_duty_cycle_i_3__n pinout4_xbox_lad_i_1__n s5_duty_cycle_i_2__n pinout4_xbox_lad_i_0__n s5_duty_cycle_i_1__n pinout4_xbox_lad_i_3__n s5_duty_cycle_i_0__n s_fsm_counter_i_1__n s4_io_reg_addr_i_0__n \
+#  s_fsm_counter_i_0__n s_lpc_fsm_state_i_0__n s_fsm_counter_i_2__n s_lpc_fsm_state_i_1__n N_88_i N_51_i_i N_52_i_i N_54_i_i N_56_i_i N_57_i_i \
+#  pin_xbox_n_lrst_c pin_xbox_lclk_c pinout4_xbox_lad_c_0__n pinout4_xbox_lad_c_1__n pinout4_xbox_lad_c_2__n pinout4_xbox_lad_c_3__n N_22_i N_23_0 N_79_i N_78_i \
+#  N_81_i N_80_i N_83_i N_82_i N_85_i N_84_i N_87_i N_86_i s4_io_reg_addr_i_1__n N_37_i \
+#  N_39_0 N_171_i N_172_i N_65_i N_15_i N_72_i process_lpc_decode_s_io_cyc_8_0_n N_70_i N_71_i N_68_i \
+#  N_69_i N_50_0 N_47_i N_45_i N_44_0 N_170_i N_38_i N_90_i N_76_i N_77_i \
+#  N_126_i N_73_i N_74_i N_75_i N_66_i N_67_i s4_io_reg_addr_1_sqmuxa_i s_lpc_fsm_state_ns_0_0__n N_15_i_1 N_15_i_2 \
+#  N_37_i_1 process_lpc_decode_s_io_cyc_8_0_1_n process_lpc_decode_s_io_cyc_8_0_2_n process_lpc_decode_s_io_cyc_8_0_3_n N_72_1 N_72_2 N_72_3 N_72_4 N_68_1 N_68_2 \
+#  N_68_3 N_67_1 N_67_2 s4_io_reg_addr_1_sqmuxa_1 s4_io_reg_addr_1_sqmuxa_2 s3_lcd_data_low_0_sqmuxa_1 s3_lcd_data_low_0_sqmuxa_2 s3_lcd_data_high_1_sqmuxa_1 s3_lcd_data_high_1_sqmuxa_2 N_65_1 \
+#  N_65_2 N_65_3 N_32_i_1 N_19_i_1 s_lpc_fsm_state_ns_0_1_0__n N_77_1 N_74_1 N_73_1 N_71_1 N_69_1 \
+#  N_66_1 process_lpc_direction_un26_s_lpc_fsm_state_1_n un22_s5_duty_cycle_1 un22_s5_duty_cycle_2 un22_s5_duty_cycle_3 process_lpc_decode_s_io_cyc_8_iv_0_m2_un3_n process_lpc_decode_s_io_cyc_8_iv_0_m2_un1_n process_lpc_decode_s_io_cyc_8_iv_0_m2_un0_n 
+.model lcdcheapie_entity
+.inputs pin_xbox_n_lrst.BLIF pin_xbox_lclk.BLIF pinout4_xbox_lad_3_.BLIF pinout4_xbox_lad_2_.BLIF pinout4_xbox_lad_1_.BLIF pinout4_xbox_lad_0_.BLIF s3_lcd_data_low_0_reg.BLIF s3_lcd_data_low_1_reg.BLIF s3_lcd_data_low_2_reg.BLIF s3_lcd_data_high_0_reg.BLIF s3_lcd_data_high_1_reg.BLIF s3_lcd_data_high_2_reg.BLIF inst_s_backlightreg.BLIF \
+  un22_s5_duty_cycle.BLIF G_77.BLIF G_79.BLIF s_fsm_counter_1_.BLIF s_fsm_counter_2_.BLIF s5_duty_cycle_0_.BLIF s5_duty_cycle_1_.BLIF s5_duty_cycle_2_.BLIF s5_duty_cycle_3_.BLIF \
+  s5_duty_cycle_4_.BLIF s4_io_reg_addr_0_.BLIF s4_io_reg_addr_1_.BLIF s4_io_reg_addr_2_.BLIF s4_io_reg_addr_3_.BLIF s_fsm_counter_0_.BLIF gnd_n_n.BLIF inst_s_io_cyc.BLIF s5_pwm_counter_0_.BLIF \
+  s5_pwm_counter_1_.BLIF s5_pwm_counter_2_.BLIF s5_pwm_counter_3_.BLIF s5_pwm_counter_4_.BLIF process_lpc_direction_un26_s_lpc_fsm_state_n.BLIF s3_lcd_data_high_1_sqmuxa.BLIF s3_lcd_data_low_0_sqmuxa.BLIF s_lpc_fsm_state_0_.BLIF s_lpc_fsm_state_1_.BLIF \
+  s_lpc_fsm_state_6_sqmuxa.BLIF s4_io_reg_addr_1_sqmuxa.BLIF s_lpc_fsm_state_ns_0__n.BLIF N_88.BLIF N_170.BLIF N_44.BLIF N_45.BLIF N_47.BLIF N_50.BLIF \
+  N_59.BLIF N_66.BLIF N_67.BLIF N_68.BLIF N_69.BLIF N_70.BLIF N_71.BLIF N_72.BLIF N_73.BLIF \
+  N_74.BLIF N_75.BLIF N_76.BLIF N_77.BLIF N_89.BLIF N_90.BLIF N_91.BLIF N_175.BLIF N_176.BLIF \
+  G_90_0_x2.BLIF G_89_0_x2.BLIF G_75_0_x2.BLIF G_88_0_x2.BLIF G_73_0_x2.BLIF G_86_0_x2.BLIF G_87_0_x2.BLIF N_65.BLIF N_15.BLIF \
+  un8_s5_pwm_counter_1.BLIF N_172.BLIF N_171.BLIF N_86.BLIF N_87.BLIF N_84.BLIF N_85.BLIF N_82.BLIF N_83.BLIF \
+  N_80.BLIF N_81.BLIF N_78.BLIF N_79.BLIF N_143.BLIF N_141.BLIF N_22.BLIF un22_s5_duty_cycle_i.BLIF s4_io_reg_addr_i_3__n.BLIF \
+  s4_io_reg_addr_i_2__n.BLIF s5_duty_cycle_i_4__n.BLIF pinout4_xbox_lad_i_2__n.BLIF s5_duty_cycle_i_3__n.BLIF pinout4_xbox_lad_i_1__n.BLIF s5_duty_cycle_i_2__n.BLIF pinout4_xbox_lad_i_0__n.BLIF s5_duty_cycle_i_1__n.BLIF pinout4_xbox_lad_i_3__n.BLIF \
+  s5_duty_cycle_i_0__n.BLIF s_fsm_counter_i_1__n.BLIF s4_io_reg_addr_i_0__n.BLIF s_fsm_counter_i_0__n.BLIF s_lpc_fsm_state_i_0__n.BLIF s_fsm_counter_i_2__n.BLIF s_lpc_fsm_state_i_1__n.BLIF N_88_i.BLIF N_51_i_i.BLIF \
+  N_52_i_i.BLIF N_54_i_i.BLIF N_56_i_i.BLIF N_57_i_i.BLIF pin_xbox_n_lrst_c.BLIF pin_xbox_lclk_c.BLIF pinout4_xbox_lad_c_0__n.BLIF pinout4_xbox_lad_c_1__n.BLIF pinout4_xbox_lad_c_2__n.BLIF \
+  pinout4_xbox_lad_c_3__n.BLIF N_22_i.BLIF N_23_0.BLIF N_79_i.BLIF N_78_i.BLIF N_81_i.BLIF N_80_i.BLIF N_83_i.BLIF N_82_i.BLIF \
+  N_85_i.BLIF N_84_i.BLIF N_87_i.BLIF N_86_i.BLIF s4_io_reg_addr_i_1__n.BLIF N_37_i.BLIF N_39_0.BLIF N_171_i.BLIF N_172_i.BLIF \
+  N_65_i.BLIF N_15_i.BLIF N_72_i.BLIF process_lpc_decode_s_io_cyc_8_0_n.BLIF N_70_i.BLIF N_71_i.BLIF N_68_i.BLIF N_69_i.BLIF N_50_0.BLIF \
+  N_47_i.BLIF N_45_i.BLIF N_44_0.BLIF N_170_i.BLIF N_38_i.BLIF N_90_i.BLIF N_76_i.BLIF N_77_i.BLIF N_126_i.BLIF \
+  N_73_i.BLIF N_74_i.BLIF N_75_i.BLIF N_66_i.BLIF N_67_i.BLIF s4_io_reg_addr_1_sqmuxa_i.BLIF s_lpc_fsm_state_ns_0_0__n.BLIF N_15_i_1.BLIF N_15_i_2.BLIF \
+  N_37_i_1.BLIF process_lpc_decode_s_io_cyc_8_0_1_n.BLIF process_lpc_decode_s_io_cyc_8_0_2_n.BLIF process_lpc_decode_s_io_cyc_8_0_3_n.BLIF N_72_1.BLIF N_72_2.BLIF N_72_3.BLIF N_72_4.BLIF N_68_1.BLIF \
+  N_68_2.BLIF N_68_3.BLIF N_67_1.BLIF N_67_2.BLIF s4_io_reg_addr_1_sqmuxa_1.BLIF s4_io_reg_addr_1_sqmuxa_2.BLIF s3_lcd_data_low_0_sqmuxa_1.BLIF s3_lcd_data_low_0_sqmuxa_2.BLIF s3_lcd_data_high_1_sqmuxa_1.BLIF \
+  s3_lcd_data_high_1_sqmuxa_2.BLIF N_65_1.BLIF N_65_2.BLIF N_65_3.BLIF N_32_i_1.BLIF N_19_i_1.BLIF s_lpc_fsm_state_ns_0_1_0__n.BLIF N_77_1.BLIF N_74_1.BLIF \
+  N_73_1.BLIF N_71_1.BLIF N_69_1.BLIF N_66_1.BLIF process_lpc_direction_un26_s_lpc_fsm_state_1_n.BLIF un22_s5_duty_cycle_1.BLIF un22_s5_duty_cycle_2.BLIF un22_s5_duty_cycle_3.BLIF process_lpc_decode_s_io_cyc_8_iv_0_m2_un3_n.BLIF \
+  process_lpc_decode_s_io_cyc_8_iv_0_m2_un1_n.BLIF process_lpc_decode_s_io_cyc_8_iv_0_m2_un0_n.BLIF pinout4_xbox_lad_0_.PIN pinout4_xbox_lad_1_.PIN pinout4_xbox_lad_2_.PIN pinout4_xbox_lad_3_.PIN  
+.outputs p4out_lcd_d4_d7_3_ pout_lcd_rs pout_lcd_e pout_backlight p4out_lcd_d4_d7_2_ p4out_lcd_d4_d7_1_ p4out_lcd_d4_d7_0_ s_lpc_fsm_state_0_.D s_lpc_fsm_state_0_.C s_lpc_fsm_state_1_.D s_lpc_fsm_state_1_.C \
+  s3_lcd_data_low_0_reg.D s3_lcd_data_low_0_reg.CE s3_lcd_data_low_0_reg.C s3_lcd_data_low_1_reg.D s3_lcd_data_low_1_reg.CE s3_lcd_data_low_1_reg.C s3_lcd_data_low_2_reg.D s3_lcd_data_low_2_reg.CE s3_lcd_data_low_2_reg.C s3_lcd_data_high_0_reg.D s3_lcd_data_high_0_reg.CE \
+  s3_lcd_data_high_0_reg.C s3_lcd_data_high_1_reg.D s3_lcd_data_high_1_reg.CE s3_lcd_data_high_1_reg.C s3_lcd_data_high_2_reg.D s3_lcd_data_high_2_reg.CE s3_lcd_data_high_2_reg.C s4_io_reg_addr_0_.D s4_io_reg_addr_0_.CE s4_io_reg_addr_0_.C s4_io_reg_addr_1_.D \
+  s4_io_reg_addr_1_.CE s4_io_reg_addr_1_.C s4_io_reg_addr_2_.D s4_io_reg_addr_2_.CE s4_io_reg_addr_2_.C s4_io_reg_addr_3_.D s4_io_reg_addr_3_.CE s4_io_reg_addr_3_.C s_fsm_counter_0_.D s_fsm_counter_0_.CE s_fsm_counter_0_.C \
+  s_fsm_counter_1_.D s_fsm_counter_1_.CE s_fsm_counter_1_.C s_fsm_counter_2_.D s_fsm_counter_2_.CE s_fsm_counter_2_.C s5_duty_cycle_0_.D s5_duty_cycle_0_.CE s5_duty_cycle_0_.C s5_duty_cycle_1_.D s5_duty_cycle_1_.CE \
+  s5_duty_cycle_1_.C s5_duty_cycle_2_.D s5_duty_cycle_2_.CE s5_duty_cycle_2_.C s5_duty_cycle_3_.D s5_duty_cycle_3_.CE s5_duty_cycle_3_.C s5_duty_cycle_4_.D s5_duty_cycle_4_.CE s5_duty_cycle_4_.C s5_pwm_counter_0_.D \
+  s5_pwm_counter_0_.C s5_pwm_counter_1_.D s5_pwm_counter_1_.C s5_pwm_counter_2_.D s5_pwm_counter_2_.C s5_pwm_counter_3_.D s5_pwm_counter_3_.C s5_pwm_counter_4_.D s5_pwm_counter_4_.C inst_s_io_cyc.D inst_s_io_cyc.CE \
+  inst_s_io_cyc.C inst_s_backlightreg.D inst_s_backlightreg.C G_79.X1 G_79.X2 G_77.X1 G_77.X2 G_88_0_x2.X1 G_88_0_x2.X2 G_75_0_x2.X1 G_75_0_x2.X2 \
+  G_89_0_x2.X1 G_89_0_x2.X2 G_90_0_x2.X1 G_90_0_x2.X2 G_87_0_x2.X1 G_87_0_x2.X2 G_86_0_x2.X1 G_86_0_x2.X2 G_73_0_x2.X1 G_73_0_x2.X2 pinout4_xbox_lad_3_ pinout4_xbox_lad_2_ pinout4_xbox_lad_1_ pinout4_xbox_lad_0_ un22_s5_duty_cycle \
+  gnd_n_n process_lpc_direction_un26_s_lpc_fsm_state_n s3_lcd_data_high_1_sqmuxa s3_lcd_data_low_0_sqmuxa s_lpc_fsm_state_6_sqmuxa s4_io_reg_addr_1_sqmuxa s_lpc_fsm_state_ns_0__n N_88 N_170 N_44 N_45 \
+  N_47 N_50 N_59 N_66 N_67 N_68 N_69 N_70 N_71 N_72 N_73 \
+  N_74 N_75 N_76 N_77 N_89 N_90 N_91 N_175 N_176 N_65 N_15 \
+  un8_s5_pwm_counter_1 N_172 N_171 N_86 N_87 N_84 N_85 N_82 N_83 N_80 N_81 \
+  N_78 N_79 N_143 N_141 N_22 un22_s5_duty_cycle_i s4_io_reg_addr_i_3__n s4_io_reg_addr_i_2__n s5_duty_cycle_i_4__n pinout4_xbox_lad_i_2__n s5_duty_cycle_i_3__n \
+  pinout4_xbox_lad_i_1__n s5_duty_cycle_i_2__n pinout4_xbox_lad_i_0__n s5_duty_cycle_i_1__n pinout4_xbox_lad_i_3__n s5_duty_cycle_i_0__n s_fsm_counter_i_1__n s4_io_reg_addr_i_0__n s_fsm_counter_i_0__n s_lpc_fsm_state_i_0__n s_fsm_counter_i_2__n \
+  s_lpc_fsm_state_i_1__n N_88_i N_51_i_i N_52_i_i N_54_i_i N_56_i_i N_57_i_i pin_xbox_n_lrst_c pin_xbox_lclk_c pinout4_xbox_lad_c_0__n pinout4_xbox_lad_c_1__n \
+  pinout4_xbox_lad_c_2__n pinout4_xbox_lad_c_3__n N_22_i N_23_0 N_79_i N_78_i N_81_i N_80_i N_83_i N_82_i N_85_i \
+  N_84_i N_87_i N_86_i s4_io_reg_addr_i_1__n N_37_i N_39_0 N_171_i N_172_i N_65_i N_15_i N_72_i \
+  process_lpc_decode_s_io_cyc_8_0_n N_70_i N_71_i N_68_i N_69_i N_50_0 N_47_i N_45_i N_44_0 N_170_i N_38_i \
+  N_90_i N_76_i N_77_i N_126_i N_73_i N_74_i N_75_i N_66_i N_67_i s4_io_reg_addr_1_sqmuxa_i s_lpc_fsm_state_ns_0_0__n \
+  N_15_i_1 N_15_i_2 N_37_i_1 process_lpc_decode_s_io_cyc_8_0_1_n process_lpc_decode_s_io_cyc_8_0_2_n process_lpc_decode_s_io_cyc_8_0_3_n N_72_1 N_72_2 N_72_3 N_72_4 N_68_1 \
+  N_68_2 N_68_3 N_67_1 N_67_2 s4_io_reg_addr_1_sqmuxa_1 s4_io_reg_addr_1_sqmuxa_2 s3_lcd_data_low_0_sqmuxa_1 s3_lcd_data_low_0_sqmuxa_2 s3_lcd_data_high_1_sqmuxa_1 s3_lcd_data_high_1_sqmuxa_2 N_65_1 \
+  N_65_2 N_65_3 N_32_i_1 N_19_i_1 s_lpc_fsm_state_ns_0_1_0__n N_77_1 N_74_1 N_73_1 N_71_1 N_69_1 N_66_1 \
+  process_lpc_direction_un26_s_lpc_fsm_state_1_n un22_s5_duty_cycle_1 un22_s5_duty_cycle_2 un22_s5_duty_cycle_3 process_lpc_decode_s_io_cyc_8_iv_0_m2_un3_n process_lpc_decode_s_io_cyc_8_iv_0_m2_un1_n process_lpc_decode_s_io_cyc_8_iv_0_m2_un0_n pinout4_xbox_lad_0_.OE pinout4_xbox_lad_1_.OE \
+  pinout4_xbox_lad_2_.OE pinout4_xbox_lad_3_.OE
+.names gnd_n_n.BLIF pinout4_xbox_lad_0_
+1 1
+.names pinout4_xbox_lad_0_.PIN pinout4_xbox_lad_c_0__n
+1 1
+.names process_lpc_direction_un26_s_lpc_fsm_state_n.BLIF pinout4_xbox_lad_0_.OE
+1 1
+.names gnd_n_n.BLIF pinout4_xbox_lad_1_
+1 1
+.names pinout4_xbox_lad_1_.PIN pinout4_xbox_lad_c_1__n
+1 1
+.names process_lpc_direction_un26_s_lpc_fsm_state_n.BLIF pinout4_xbox_lad_1_.OE
+1 1
+.names gnd_n_n.BLIF pinout4_xbox_lad_2_
+1 1
+.names pinout4_xbox_lad_2_.PIN pinout4_xbox_lad_c_2__n
+1 1
+.names process_lpc_direction_un26_s_lpc_fsm_state_n.BLIF pinout4_xbox_lad_2_.OE
+1 1
+.names gnd_n_n.BLIF pinout4_xbox_lad_3_
+1 1
+.names pinout4_xbox_lad_3_.PIN pinout4_xbox_lad_c_3__n
+1 1
+.names process_lpc_direction_un26_s_lpc_fsm_state_n.BLIF pinout4_xbox_lad_3_.OE
+1 1
+.names  pinout4_xbox_lad_c_3__n.BLIF s3_lcd_data_low_2_reg.D
+1 1
+.names  s3_lcd_data_low_0_sqmuxa.BLIF s3_lcd_data_low_2_reg.CE
+1 1
+.names  pin_xbox_lclk_c.BLIF s3_lcd_data_low_2_reg.C
+1 1
+.names  pinout4_xbox_lad_c_0__n.BLIF s3_lcd_data_high_0_reg.D
+1 1
+.names  s3_lcd_data_high_1_sqmuxa.BLIF s3_lcd_data_high_0_reg.CE
+1 1
+.names  pin_xbox_lclk_c.BLIF s3_lcd_data_high_0_reg.C
+1 1
+.names  pinout4_xbox_lad_c_1__n.BLIF s3_lcd_data_high_1_reg.D
+1 1
+.names  s3_lcd_data_high_1_sqmuxa.BLIF s3_lcd_data_high_1_reg.CE
+1 1
+.names  pin_xbox_lclk_c.BLIF s3_lcd_data_high_1_reg.C
+1 1
+.names  pinout4_xbox_lad_c_2__n.BLIF s3_lcd_data_high_2_reg.D
+1 1
+.names  s3_lcd_data_high_1_sqmuxa.BLIF s3_lcd_data_high_2_reg.CE
+1 1
+.names  pin_xbox_lclk_c.BLIF s3_lcd_data_high_2_reg.C
+1 1
+.names  pinout4_xbox_lad_c_0__n.BLIF s4_io_reg_addr_0_.D
+1 1
+.names  s_lpc_fsm_state_6_sqmuxa.BLIF s4_io_reg_addr_0_.CE
+1 1
+.names  pin_xbox_lclk_c.BLIF s4_io_reg_addr_0_.C
+1 1
+.names  pinout4_xbox_lad_c_1__n.BLIF s4_io_reg_addr_1_.D
+1 1
+.names  pin_xbox_n_lrst.BLIF pin_xbox_n_lrst_c
+1 1
+.names  s_lpc_fsm_state_6_sqmuxa.BLIF s4_io_reg_addr_1_.CE
+1 1
+.names  pin_xbox_lclk.BLIF pin_xbox_lclk_c
+1 1
+.names  pin_xbox_lclk_c.BLIF s4_io_reg_addr_1_.C
+1 1
+.names  pinout4_xbox_lad_c_2__n.BLIF s4_io_reg_addr_2_.D
+1 1
+.names  s3_lcd_data_low_0_reg.BLIF pout_lcd_rs
+1 1
+.names  s3_lcd_data_low_1_reg.BLIF pout_lcd_e
+1 1
+.names  s_lpc_fsm_state_6_sqmuxa.BLIF s4_io_reg_addr_2_.CE
+1 1
+.names  s3_lcd_data_low_2_reg.BLIF p4out_lcd_d4_d7_0_
+1 1
+.names  s3_lcd_data_high_0_reg.BLIF p4out_lcd_d4_d7_1_
+1 1
+.names  pin_xbox_lclk_c.BLIF s4_io_reg_addr_2_.C
+1 1
+.names  s3_lcd_data_high_1_reg.BLIF p4out_lcd_d4_d7_2_
+1 1
+.names  s3_lcd_data_high_2_reg.BLIF p4out_lcd_d4_d7_3_
+1 1
+.names  inst_s_backlightreg.BLIF pout_backlight
+1 1
+.names  pinout4_xbox_lad_c_3__n.BLIF s4_io_reg_addr_3_.D
+1 1
+.names  N_90.BLIF N_91.BLIF process_lpc_direction_un26_s_lpc_fsm_state_1_n
+11 1
+.names  process_lpc_direction_un26_s_lpc_fsm_state_1_n.BLIF s_fsm_counter_2_.BLIF process_lpc_direction_un26_s_lpc_fsm_state_n
+11 1
+.names  s_lpc_fsm_state_6_sqmuxa.BLIF s4_io_reg_addr_3_.CE
+1 1
+.names  N_57_i_i.BLIF N_51_i_i.BLIF un22_s5_duty_cycle_1
+11 1
+.names  N_52_i_i.BLIF N_54_i_i.BLIF un22_s5_duty_cycle_2
+11 1
+.names  pin_xbox_lclk_c.BLIF s4_io_reg_addr_3_.C
+1 1
+.names  un22_s5_duty_cycle_1.BLIF un22_s5_duty_cycle_2.BLIF un22_s5_duty_cycle_3
+11 1
+.names  un22_s5_duty_cycle_3.BLIF N_56_i_i.BLIF un22_s5_duty_cycle
+11 1
+.names  N_19_i_1.BLIF N_75_i.BLIF s_fsm_counter_2_.D
+11 1
+.names  s4_io_reg_addr_1_sqmuxa_i.BLIF N_66_i.BLIF s_lpc_fsm_state_ns_0_1_0__n
+11 1
+.names  pin_xbox_n_lrst_c.BLIF s_fsm_counter_0_.CE
+1 1
+.names  s_lpc_fsm_state_ns_0_1_0__n.BLIF N_67_i.BLIF s_lpc_fsm_state_ns_0_0__n
+11 1
+.names  N_45_i.BLIF s_lpc_fsm_state_0_.BLIF N_77_1
+11 1
+.names  pin_xbox_lclk_c.BLIF s_fsm_counter_0_.C
+1 1
+.names  N_77_1.BLIF s_lpc_fsm_state_1_.BLIF N_77
+11 1
+.names  N_88.BLIF N_170.BLIF N_74_1
+11 1
+.names  N_74_1.BLIF s_fsm_counter_2_.BLIF N_74
+11 1
+.names  N_44.BLIF N_88_i.BLIF N_73_1
+11 1
+.names  pin_xbox_n_lrst_c.BLIF s_fsm_counter_1_.CE
+1 1
+.names  N_73_1.BLIF N_170.BLIF N_73
+11 1
+.names  N_170_i.BLIF pinout4_xbox_lad_c_1__n.BLIF N_71_1
+11 1
+.names  pin_xbox_lclk_c.BLIF s_fsm_counter_1_.C
+1 1
+.names  N_71_1.BLIF pinout4_xbox_lad_i_2__n.BLIF N_71
+11 1
+.names  N_47.BLIF inst_s_io_cyc.BLIF N_69_1
+11 1
+.names  N_69_1.BLIF s_lpc_fsm_state_0_.BLIF N_69
+11 1
+.names  N_45.BLIF s_lpc_fsm_state_0_.BLIF N_66_1
+11 1
+.names  pin_xbox_n_lrst_c.BLIF s_fsm_counter_2_.CE
+1 1
+.names  N_66_1.BLIF s_lpc_fsm_state_1_.BLIF N_66
+11 1
+.names  s_lpc_fsm_state_1_.BLIF s_lpc_fsm_state_i_0__n.BLIF s4_io_reg_addr_1_sqmuxa_2
+11 1
+.names  pin_xbox_lclk_c.BLIF s_fsm_counter_2_.C
+1 1
+.names  s4_io_reg_addr_1_sqmuxa_1.BLIF s4_io_reg_addr_1_sqmuxa_2.BLIF s4_io_reg_addr_1_sqmuxa
+11 1
+.names  N_37_i.BLIF N_90.BLIF s3_lcd_data_low_0_sqmuxa_1
+11 1
+.names  N_175.BLIF s4_io_reg_addr_i_0__n.BLIF s3_lcd_data_low_0_sqmuxa_2
+11 1
+.names  s3_lcd_data_low_0_sqmuxa_1.BLIF s3_lcd_data_low_0_sqmuxa_2.BLIF s3_lcd_data_low_0_sqmuxa
+11 1
+.names  N_176.BLIF s5_duty_cycle_0_.CE
+1 1
+.names  N_37_i.BLIF N_176.BLIF s3_lcd_data_high_1_sqmuxa_1
+11 1
+.names  s4_io_reg_addr_i_0__n.BLIF s_fsm_counter_0_.BLIF s3_lcd_data_high_1_sqmuxa_2
+11 1
+.names  pin_xbox_lclk_c.BLIF s5_duty_cycle_0_.C
+1 1
+.names  s3_lcd_data_high_1_sqmuxa_1.BLIF s3_lcd_data_high_1_sqmuxa_2.BLIF s3_lcd_data_high_1_sqmuxa
+11 1
+.names  s5_duty_cycle_i_0__n.BLIF s5_duty_cycle_i_1__n.BLIF N_65_1
+11 1
+.names  s5_duty_cycle_i_2__n.BLIF s5_duty_cycle_i_3__n.BLIF N_65_2
+11 1
+.names  N_65_1.BLIF N_65_2.BLIF N_65_3
+11 1
+.names  N_176.BLIF s5_duty_cycle_1_.CE
+1 1
+.names  N_65_3.BLIF s5_duty_cycle_i_4__n.BLIF N_65
+11 1
+.names  N_88_i.BLIF N_90_i.BLIF N_32_i_1
+11 1
+.names  pin_xbox_lclk_c.BLIF s5_duty_cycle_1_.C
+1 1
+.names  N_32_i_1.BLIF N_170.BLIF s_fsm_counter_1_.D
+11 1
+.names  N_73_i.BLIF N_74_i.BLIF N_19_i_1
+11 1
+.names  process_lpc_decode_s_io_cyc_8_0_1_n.BLIF process_lpc_decode_s_io_cyc_8_0_2_n.BLIF process_lpc_decode_s_io_cyc_8_0_3_n
+11 1
+.names  process_lpc_decode_s_io_cyc_8_0_3_n.BLIF N_71_i.BLIF process_lpc_decode_s_io_cyc_8_0_n
+11 1
+.names  N_176.BLIF s5_duty_cycle_2_.CE
+1 1
+.names  pinout4_xbox_lad_i_3__n.BLIF s_fsm_counter_1_.BLIF N_72_1
+11 1
+.names  N_89.BLIF pinout4_xbox_lad_i_0__n.BLIF N_72_2
+11 1
+.names  pin_xbox_lclk_c.BLIF s5_duty_cycle_2_.C
+1 1
+.names  pinout4_xbox_lad_i_1__n.BLIF pinout4_xbox_lad_i_2__n.BLIF N_72_3
+11 1
+.names  N_72_1.BLIF N_72_2.BLIF N_72_4
+11 1
+.names  N_72_4.BLIF N_72_3.BLIF N_72
+11 1
+.names  N_59.BLIF N_89.BLIF N_68_1
+11 1
+.names  N_176.BLIF s5_duty_cycle_3_.CE
+1 1
+.names  pinout4_xbox_lad_c_0__n.BLIF pinout4_xbox_lad_c_1__n.BLIF N_68_2
+11 1
+.names  N_68_1.BLIF N_68_2.BLIF N_68_3
+11 1
+.names  pin_xbox_lclk_c.BLIF s5_duty_cycle_3_.C
+1 1
+.names  N_68_3.BLIF pinout4_xbox_lad_c_2__n.BLIF N_68
+11 1
+.names  N_47_i.BLIF pinout4_xbox_lad_i_0__n.BLIF N_67_1
+11 1
+.names  pinout4_xbox_lad_i_1__n.BLIF s_lpc_fsm_state_i_0__n.BLIF N_67_2
+11 1
+.names  N_67_1.BLIF N_67_2.BLIF N_67
+11 1
+.names  N_176.BLIF s5_duty_cycle_4_.CE
+1 1
+.names  N_45_i.BLIF s_fsm_counter_0_.BLIF s4_io_reg_addr_1_sqmuxa_1
+11 1
+.names  N_77.BLIF N_77_i
+0 1
+.names  pin_xbox_lclk_c.BLIF s5_duty_cycle_4_.C
+1 1
+.names  N_73.BLIF N_73_i
+0 1
+.names  N_74.BLIF N_74_i
+0 1
+.names  N_75.BLIF N_75_i
+0 1
+.names  N_66.BLIF N_66_i
+0 1
+.names  pin_xbox_lclk_c.BLIF s5_pwm_counter_0_.C
+1 1
+.names  N_67.BLIF N_67_i
+0 1
+.names  s4_io_reg_addr_1_sqmuxa.BLIF s4_io_reg_addr_1_sqmuxa_i
+0 1
+.names  s_lpc_fsm_state_ns_0_0__n.BLIF s_lpc_fsm_state_ns_0__n
+0 1
+.names  s5_pwm_counter_3_.BLIF s5_pwm_counter_4_.BLIF N_15_i_1
+11 1
+.names  pin_xbox_lclk_c.BLIF s5_pwm_counter_1_.C
+1 1
+.names  N_141.BLIF N_65_i.BLIF N_15_i_2
+11 1
+.names  N_15_i_1.BLIF N_15_i_2.BLIF N_15_i
+11 1
+.names  s4_io_reg_addr_i_1__n.BLIF s4_io_reg_addr_i_2__n.BLIF N_37_i_1
+11 1
+.names  N_37_i_1.BLIF s4_io_reg_addr_i_3__n.BLIF N_37_i
+11 1
+.names  pin_xbox_lclk_c.BLIF s5_pwm_counter_2_.C
+1 1
+.names  N_72_i.BLIF N_68_i.BLIF process_lpc_decode_s_io_cyc_8_0_1_n
+11 1
+.names  N_69_i.BLIF N_70_i.BLIF process_lpc_decode_s_io_cyc_8_0_2_n
+11 1
+.names  N_65.BLIF N_65_i
+0 1
+.names  N_15_i.BLIF N_15
+0 1
+.names  pin_xbox_lclk_c.BLIF s5_pwm_counter_3_.C
+1 1
+.names  N_72.BLIF N_72_i
+0 1
+.names  process_lpc_decode_s_io_cyc_8_0_n.BLIF inst_s_io_cyc.D
+0 1
+.names  N_70.BLIF N_70_i
+0 1
+.names  N_71.BLIF N_71_i
+0 1
+.names  pin_xbox_lclk_c.BLIF s5_pwm_counter_4_.C
+1 1
+.names  N_68.BLIF N_68_i
+0 1
+.names  N_69.BLIF N_69_i
+0 1
+.names  N_50_0.BLIF N_50
+0 1
+.names  N_47_i.BLIF N_47
+0 1
+.names  pin_xbox_n_lrst_c.BLIF inst_s_io_cyc.CE
+1 1
+.names  N_45_i.BLIF N_45
+0 1
+.names  N_44_0.BLIF N_44
+0 1
+.names  pin_xbox_lclk_c.BLIF inst_s_io_cyc.C
+1 1
+.names  N_170_i.BLIF N_170
+0 1
+.names  N_90.BLIF N_90_i
+0 1
+.names  N_76.BLIF N_76_i
+0 1
+.names  N_22.BLIF N_22_i
+0 1
+.names  pin_xbox_lclk_c.BLIF inst_s_backlightreg.C
+1 1
+.names  N_23_0.BLIF inst_s_backlightreg.D
+0 1
+.names  N_79.BLIF N_79_i
+0 1
+.names  N_78.BLIF N_78_i
+0 1
+.names  N_143.BLIF G_79.X1
+1 1
+.names  N_81.BLIF N_81_i
+0 1
+.names  N_80.BLIF N_80_i
+0 1
+.names  s5_pwm_counter_4_.BLIF G_79.X2
+1 1
+.names  N_83.BLIF N_83_i
+0 1
+.names  N_82.BLIF N_82_i
+0 1
+.names  N_85.BLIF N_85_i
+0 1
+.names  N_141.BLIF G_77.X1
+1 1
+.names  N_84.BLIF N_84_i
+0 1
+.names  N_87.BLIF N_87_i
+0 1
+.names  s5_pwm_counter_3_.BLIF G_77.X2
+1 1
+.names  N_86.BLIF N_86_i
+0 1
+.names  s4_io_reg_addr_1_.BLIF s4_io_reg_addr_i_1__n
+0 1
+.names  N_171_i.BLIF N_171
+0 1
+.names  s5_duty_cycle_2_.BLIF G_88_0_x2.X1
+1 1
+.names  N_172_i.BLIF N_172
+0 1
+.names  un22_s5_duty_cycle.BLIF un22_s5_duty_cycle_i
+0 1
+.names  s5_pwm_counter_2_.BLIF G_88_0_x2.X2
+1 1
+.names  inst_s_backlightreg.BLIF un22_s5_duty_cycle_i.BLIF N_22
+11 1
+.names  s5_duty_cycle_3_.BLIF s5_duty_cycle_i_3__n
+0 1
+.names  N_171.BLIF s5_duty_cycle_i_3__n.BLIF N_80
+11 1
+.names  s5_pwm_counter_2_.BLIF G_75_0_x2.X1
+1 1
+.names  pinout4_xbox_lad_c_2__n.BLIF pinout4_xbox_lad_i_2__n
+0 1
+.names  N_171_i.BLIF pinout4_xbox_lad_i_2__n.BLIF N_79
+11 1
+.names  un8_s5_pwm_counter_1.BLIF G_75_0_x2.X2
+1 1
+.names  s5_duty_cycle_4_.BLIF s5_duty_cycle_i_4__n
+0 1
+.names  N_171.BLIF s5_duty_cycle_i_4__n.BLIF N_78
+11 1
+.names  N_170_i.BLIF pinout4_xbox_lad_c_2__n.BLIF N_75
+11 1
+.names  s5_duty_cycle_3_.BLIF G_89_0_x2.X1
+1 1
+.names  s5_pwm_counter_3_.BLIF G_89_0_x2.X2
+1 1
+.names  s4_io_reg_addr_3_.BLIF s4_io_reg_addr_i_3__n
+0 1
+.names  s4_io_reg_addr_2_.BLIF s4_io_reg_addr_i_2__n
+0 1
+.names  N_141.BLIF s5_pwm_counter_3_.BLIF N_143
+11 1
+.names  s5_duty_cycle_4_.BLIF G_90_0_x2.X1
+1 1
+.names  s5_pwm_counter_2_.BLIF un8_s5_pwm_counter_1.BLIF N_141
+11 1
+.names  s5_pwm_counter_0_.BLIF s5_pwm_counter_1_.BLIF un8_s5_pwm_counter_1
+11 1
+.names  s5_pwm_counter_4_.BLIF G_90_0_x2.X2
+1 1
+.names  N_15.BLIF N_22_i.BLIF N_23_0
+11 1
+.names  s_fsm_counter_1_.BLIF s_fsm_counter_i_1__n
+0 1
+.names  N_175.BLIF s_fsm_counter_i_1__n.BLIF N_176
+11 1
+.names  s5_duty_cycle_1_.BLIF G_87_0_x2.X1
+1 1
+.names  N_172_i.BLIF pinout4_xbox_lad_i_2__n.BLIF N_87
+11 1
+.names  s5_duty_cycle_0_.BLIF s5_duty_cycle_i_0__n
+0 1
+.names  s5_pwm_counter_1_.BLIF G_87_0_x2.X2
+1 1
+.names  N_172.BLIF s5_duty_cycle_i_0__n.BLIF N_86
+11 1
+.names  pinout4_xbox_lad_c_3__n.BLIF pinout4_xbox_lad_i_3__n
+0 1
+.names  N_172_i.BLIF pinout4_xbox_lad_i_3__n.BLIF N_85
+11 1
+.names  s5_duty_cycle_0_.BLIF G_86_0_x2.X1
+1 1
+.names  s5_duty_cycle_1_.BLIF s5_duty_cycle_i_1__n
+0 1
+.names  N_172.BLIF s5_duty_cycle_i_1__n.BLIF N_84
+11 1
+.names  s5_pwm_counter_0_.BLIF G_86_0_x2.X2
+1 1
+.names  pinout4_xbox_lad_c_0__n.BLIF pinout4_xbox_lad_i_0__n
+0 1
+.names  N_171_i.BLIF pinout4_xbox_lad_i_0__n.BLIF N_83
+11 1
+.names  s5_duty_cycle_2_.BLIF s5_duty_cycle_i_2__n
+0 1
+.names  s5_pwm_counter_0_.BLIF G_73_0_x2.X1
+1 1
+.names  N_171.BLIF s5_duty_cycle_i_2__n.BLIF N_82
+11 1
+.names  pinout4_xbox_lad_c_1__n.BLIF pinout4_xbox_lad_i_1__n
+0 1
+.names  s5_pwm_counter_1_.BLIF G_73_0_x2.X2
+1 1
+.names  N_171_i.BLIF pinout4_xbox_lad_i_1__n.BLIF N_81
+11 1
+.names  G_73_0_x2.BLIF s5_pwm_counter_1_.D
+1 1
+.names  G_75_0_x2.BLIF s5_pwm_counter_2_.D
+1 1
+.names  G_77.BLIF s5_pwm_counter_3_.D
+1 1
+.names  N_39_0.BLIF s_fsm_counter_i_0__n.BLIF N_172_i
+11 1
+.names  G_79.BLIF s5_pwm_counter_4_.D
+1 1
+.names  s_fsm_counter_0_.BLIF s_fsm_counter_i_0__n
+0 1
+.names  N_39_0.BLIF s_fsm_counter_0_.BLIF N_171_i
+11 1
+.names  s4_io_reg_addr_0_.BLIF s4_io_reg_addr_i_0__n
+0 1
+.names  N_37_i.BLIF s4_io_reg_addr_0_.BLIF N_39_0
+11 1
+.names  N_170.BLIF s_fsm_counter_i_0__n.BLIF s_fsm_counter_0_.D
+11 1
+.names  N_86_i.BLIF N_87_i.BLIF s5_duty_cycle_0_.D
+11 1
+.names  N_84_i.BLIF N_85_i.BLIF s5_duty_cycle_1_.D
+11 1
+.names  N_82_i.BLIF N_83_i.BLIF s5_duty_cycle_2_.D
+11 1
+.names  N_80_i.BLIF N_81_i.BLIF s5_duty_cycle_3_.D
+11 1
+.names  N_78_i.BLIF N_79_i.BLIF s5_duty_cycle_4_.D
+11 1
+.names  N_89.BLIF s_lpc_fsm_state_0_.BLIF N_91
+11 1
+.names  N_91.BLIF s_fsm_counter_i_2__n.BLIF N_175
+11 1
+.names  N_76_i.BLIF N_77_i.BLIF N_126_i
+11 1
+.names  pinout4_xbox_lad_i_3__n.BLIF s_lpc_fsm_state_i_1__n.BLIF N_38_i
+11 1
+.names  N_38_i.BLIF s_lpc_fsm_state_0_.BLIF N_170_i
+11 1
+.names  N_88_i.BLIF s_fsm_counter_2_.BLIF N_44_0
+11 1
+.names  s_fsm_counter_2_.BLIF s_fsm_counter_i_2__n
+0 1
+.names  s_fsm_counter_1_.BLIF s_fsm_counter_2_.BLIF N_45_i
+11 1
+.names  N_38_i.BLIF pinout4_xbox_lad_i_2__n.BLIF N_47_i
+11 1
+.names  pinout4_xbox_lad_i_3__n.BLIF s_lpc_fsm_state_0_.BLIF N_50_0
+11 1
+.names  pinout4_xbox_lad_c_3__n.BLIF process_lpc_decode_s_io_cyc_8_iv_0_m2_un3_n
+0 1
+.names  N_90.BLIF pinout4_xbox_lad_c_3__n.BLIF process_lpc_decode_s_io_cyc_8_iv_0_m2_un1_n
+11 1
+.names  s_fsm_counter_0_.BLIF process_lpc_decode_s_io_cyc_8_iv_0_m2_un3_n.BLIF process_lpc_decode_s_io_cyc_8_iv_0_m2_un0_n
+11 1
+.names  process_lpc_decode_s_io_cyc_8_iv_0_m2_un1_n.BLIF process_lpc_decode_s_io_cyc_8_iv_0_m2_un0_n.BLIF N_59
+1- 1
+-1 1
+.names  s_lpc_fsm_state_0_.BLIF s_lpc_fsm_state_i_0__n
+0 1
+.names  G_90_0_x2.BLIF N_51_i_i
+0 1
+.names  G_89_0_x2.BLIF N_52_i_i
+0 1
+.names  G_88_0_x2.BLIF N_54_i_i
+0 1
+.names  G_86_0_x2.BLIF N_56_i_i
+0 1
+.names  G_87_0_x2.BLIF N_57_i_i
+0 1
+.names  s_fsm_counter_0_.BLIF s_fsm_counter_1_.BLIF N_88
+11 1
+.names  N_44.BLIF N_89.BLIF N_70
+11 1
+.names  N_88.BLIF N_88_i
+0 1
+.names  s_lpc_fsm_state_1_.BLIF s_lpc_fsm_state_i_1__n
+0 1
+.names  N_50.BLIF s_lpc_fsm_state_i_1__n.BLIF N_76
+11 1
+.names  inst_s_io_cyc.BLIF s_lpc_fsm_state_1_.BLIF N_89
+11 1
+.names  s_fsm_counter_i_0__n.BLIF s_fsm_counter_i_1__n.BLIF N_90
+11 1
+.names  s5_pwm_counter_0_.BLIF s5_pwm_counter_0_.D
+0 1
+.names  pin_xbox_n_lrst_c.BLIF s_lpc_fsm_state_ns_0__n.BLIF s_lpc_fsm_state_0_.D
+11 1
+.names  N_126_i.BLIF pin_xbox_n_lrst_c.BLIF s_lpc_fsm_state_1_.D
+11 1
+.names  pin_xbox_n_lrst_c.BLIF s4_io_reg_addr_1_sqmuxa.BLIF s_lpc_fsm_state_6_sqmuxa
+11 1
+.names  gnd_n_n
+.names  pin_xbox_lclk_c.BLIF s_lpc_fsm_state_0_.C
+1 1
+.names  pin_xbox_lclk_c.BLIF s_lpc_fsm_state_1_.C
+1 1
+.names  pinout4_xbox_lad_c_1__n.BLIF s3_lcd_data_low_0_reg.D
+1 1
+.names  s3_lcd_data_low_0_sqmuxa.BLIF s3_lcd_data_low_0_reg.CE
+1 1
+.names  pin_xbox_lclk_c.BLIF s3_lcd_data_low_0_reg.C
+1 1
+.names  pinout4_xbox_lad_c_2__n.BLIF s3_lcd_data_low_1_reg.D
+1 1
+.names  s3_lcd_data_low_0_sqmuxa.BLIF s3_lcd_data_low_1_reg.CE
+1 1
+.names  pin_xbox_lclk_c.BLIF s3_lcd_data_low_1_reg.C
+1 1
+.end

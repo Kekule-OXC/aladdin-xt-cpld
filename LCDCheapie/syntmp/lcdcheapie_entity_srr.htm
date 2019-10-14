@@ -1,0 +1,89 @@
+<html><body><samp><pre>
+<!@TC:1566184615>
+#Build: Synplify Pro I-2014.03LC , Build 063R, May 27 2014
+#install: D:\ispLEVER_Classic2_0\synpbase
+#OS: Windows 7 6.2
+#Hostname: BENNYBOY-WIN8
+
+#Implementation: lcdcheapie
+
+<a name=compilerReport1>$ Start of Compile</a>
+#Sun Aug 18 23:16:55 2019
+
+Synopsys VHDL Compiler, version comp201403rcp1, Build 060R, built May 27 2014
+@N: : <!@TM:1566184615> | Running in 64-bit mode 
+Copyright (C) 1994-2014 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+@N:<a href="@N:CD720:@XP_HELP">CD720</a> : <a href="D:\ispLEVER_Classic2_0\synpbase\lib\vhd\std.vhd:123:18:123:22:@N:CD720:@XP_MSG">std.vhd(123)</a><!@TM:1566184615> | Setting time resolution to ns
+@N: : <a href="D:\dev\xblast\aladdin_xt_mods\lcdcheapie\lcd_cheapie.vhd:30:7:30:24:@N::@XP_MSG">lcd_cheapie.vhd(30)</a><!@TM:1566184615> | Top entity is set to lcdcheapie_entity.
+File D:\dev\xblast\aladdin_xt_mods\lcdcheapie\lcd_cheapie.vhd changed - recompiling
+VHDL syntax check successful!
+File D:\dev\xblast\aladdin_xt_mods\lcdcheapie\lcd_cheapie.vhd changed - recompiling
+@N:<a href="@N:CD630:@XP_HELP">CD630</a> : <a href="D:\dev\xblast\aladdin_xt_mods\lcdcheapie\lcd_cheapie.vhd:30:7:30:24:@N:CD630:@XP_MSG">lcd_cheapie.vhd(30)</a><!@TM:1566184615> | Synthesizing work.lcdcheapie_entity.arch_lcdcheapie 
+@N:<a href="@N:CD233:@XP_HELP">CD233</a> : <a href="D:\dev\xblast\aladdin_xt_mods\lcdcheapie\lcd_cheapie.vhd:73:17:73:19:@N:CD233:@XP_MSG">lcd_cheapie.vhd(73)</a><!@TM:1566184615> | Using sequential encoding for type lpc_fsm
+Post processing for work.lcdcheapie_entity.arch_lcdcheapie
+@N:<a href="@N:CL201:@XP_HELP">CL201</a> : <a href="D:\dev\xblast\aladdin_xt_mods\lcdcheapie\lcd_cheapie.vhd:108:4:108:6:@N:CL201:@XP_MSG">lcd_cheapie.vhd(108)</a><!@TM:1566184615> | Trying to extract state machine for register s_lpc_fsm_state
+Extracted state machine for register s_lpc_fsm_state
+State machine has 4 reachable states with original encodings of:
+   00
+   01
+   10
+   11
+@END
+
+At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 70MB peak: 70MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Sun Aug 18 23:16:55 2019
+
+###########################################################]
+Synopsys Netlist Linker, version comp201403rcp1, Build 060R, built May 27 2014
+@N: : <!@TM:1566184616> | Running in 64-bit mode 
+File D:\dev\xblast\aladdin_xt_mods\lcdcheapie\synwork\lcdcheapie_entity_comp.srs changed - recompiling
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Sun Aug 18 23:16:56 2019
+
+###########################################################]
+Map & Optimize Report
+
+<a name=mapperReport2>Synopsys CPLD Technology Mapper, Version maplat, Build 923R, Built May  6 2014</a>
+Copyright (C) 1994-2013, Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use or distribution of the software is strictly prohibited.
+Product Version I-2014.03LC 
+@N:<a href="@N:MF248:@XP_HELP">MF248</a> : <!@TM:1566184617> | Running in 64-bit mode. 
+Encoding state machine s_lpc_fsm_state[0:3] (view:work.lcdcheapie_entity(arch_lcdcheapie))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+   11 -> 11
+@N:<a href="@N:MO225:@XP_HELP">MO225</a> : <a href="d:\dev\xblast\aladdin_xt_mods\lcdcheapie\lcd_cheapie.vhd:108:4:108:6:@N:MO225:@XP_MSG">lcd_cheapie.vhd(108)</a><!@TM:1566184617> | No possible illegal states for state machine s_lpc_fsm_state[0:3],safe FSM implementation is disabled
+---------------------------------------
+<a name=resourceUsage3>Resource Usage Report</a>
+
+Simple gate primitives:
+DFF             8 uses
+DFFC            19 uses
+IBUF            2 uses
+BI_DIR          4 uses
+OBUF            7 uses
+AND2            103 uses
+INV             64 uses
+XOR2            9 uses
+OR2             1 use
+
+
+@N:<a href="@N:FC100:@XP_HELP">FC100</a> : <!@TM:1566184617> | Timing Report not generated for this device, please use place and route tools for timing analysis. 
+I-2014.03LC 
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 39MB peak: 104MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Sun Aug 18 23:16:57 2019
+
+###########################################################]
+
+</pre></samp></body></html>

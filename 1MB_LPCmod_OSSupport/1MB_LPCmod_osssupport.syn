@@ -1,0 +1,12 @@
+JDF B
+// Created by Version 2.0 
+PROJECT 1MB_LPCmod_OSSupport
+DESIGN 1mb_lpcmod_osssupport Normal
+DEVKIT LC4032V-10T44I
+ENTRY Pure VHDL
+STIMULUS lpcmod_tb_id.vhd
+MODULE 1mb_lpcmod.vhd
+MODSTYLE entity_lpcmod Normal
+SYNTHESIS_TOOL Synplify
+SIMULATOR_TOOL ActiveHDL
+TOPMODULE entity_lpcmod

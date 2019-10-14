@@ -1,0 +1,12 @@
+JDF B
+// Created by Version 2.0 
+PROJECT LCDCheapie
+DESIGN lcdcheapie Normal
+DEVKIT LC4032V-75T44C
+ENTRY Pure VHDL
+STIMULUS testbench.vhd
+MODULE lcd_cheapie.vhd
+MODSTYLE lcdcheapie_entity Normal
+SYNTHESIS_TOOL Synplify
+SIMULATOR_TOOL ActiveHDL
+TOPMODULE lcdcheapie_entity

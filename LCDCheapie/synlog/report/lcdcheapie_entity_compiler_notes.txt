@@ -1,0 +1,7 @@
+@N|Running in 64-bit mode
+@N: CD720 :"D:\ispLEVER_Classic2_0\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ns
+@N:"D:\dev\xblast\aladdin_xt_mods\lcdcheapie\lcd_cheapie.vhd":30:7:30:23|Top entity is set to lcdcheapie_entity.
+@N: CD630 :"D:\dev\xblast\aladdin_xt_mods\lcdcheapie\lcd_cheapie.vhd":30:7:30:23|Synthesizing work.lcdcheapie_entity.arch_lcdcheapie 
+@N: CD233 :"D:\dev\xblast\aladdin_xt_mods\lcdcheapie\lcd_cheapie.vhd":73:17:73:18|Using sequential encoding for type lpc_fsm
+@N: CL201 :"D:\dev\xblast\aladdin_xt_mods\lcdcheapie\lcd_cheapie.vhd":108:4:108:5|Trying to extract state machine for register s_lpc_fsm_state
+
